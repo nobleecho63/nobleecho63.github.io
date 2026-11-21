@@ -1,0 +1,1859 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>先锋成人资源站_先锋影像社区_品牌官网正版高清内容平台</title>
+<meta name="description" content="先锋成人资源站品牌官方网站，专注成人向影像内容的原创制作与正版高清分发，为创作者与用户搭建值得信赖的内容生态社区，深耕垂直领域多年，口碑持续积累。">
+<meta name="keywords" content="先锋成人资源站,先锋影像,成人资源,原创影像,品牌官网,内容社区">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e0e12'/%3E%3Cpath d='M24 18 L48 32 L24 46 Z' fill='%23ff3b5c'/%3E%3Ccircle cx='20' cy='20' r='4' fill='%23ffd166'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --pfx-bg:#0e0e12;
+    --pfx-bg-soft:#15151c;
+    --pfx-card:#1a1a23;
+    --pfx-card-2:#20202b;
+    --pfx-line:rgba(255,255,255,.09);
+    --pfx-line-strong:rgba(255,255,255,.18);
+    --pfx-text:#ececf2;
+    --pfx-dim:#a2a2b3;
+    --pfx-dim-2:#7c7c8f;
+    --pfx-accent:#ff3b5c;
+    --pfx-accent-soft:rgba(255,59,92,.14);
+    --pfx-neon:#2ef2c6;
+    --pfx-gold:#ffd166;
+    --pfx-radius:16px;
+    --pfx-max:1180px;
+    --pfx-header-h:64px;
+    --pfx-notice-h:38px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;scroll-padding-top:calc(var(--pfx-header-h) + var(--pfx-notice-h) + 12px)}
+  body{
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+    background:var(--pfx-bg);
+    color:var(--pfx-text);
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+  ul{list-style:none}
+  h1,h2,h3,h4{line-height:1.3;font-weight:700}
+
+  /* ===== 吸顶区：公告条 + 页头 ===== */
+  .pfx-sticky-wrap{
+    position:sticky;top:0;z-index:900;
+  }
+  .pfx-notice-bar{
+    height:var(--pfx-notice-h);
+    background:linear-gradient(90deg,#ff3b5c,#ff7a45 55%,#ffd166);
+    color:#16161c;
+    font-size:13px;
+    font-weight:600;
+    display:flex;align-items:center;
+    overflow:hidden;
+  }
+  .pfx-notice-inner{
+    max-width:var(--pfx-max);margin:0 auto;padding:0 20px;width:100%;
+    display:flex;align-items:center;gap:12px;
+  }
+  .pfx-notice-tag{
+    background:#16161c;color:#ffd166;font-size:11px;letter-spacing:.1em;
+    padding:2px 8px;border-radius:4px;flex:0 0 auto;
+  }
+  .pfx-notice-track{overflow:hidden;flex:1;position:relative;height:20px}
+  .pfx-notice-move{
+    display:inline-flex;gap:36px;white-space:nowrap;
+    animation:pfxNoticeScroll 34s linear infinite;
+  }
+  .pfx-notice-move span{display:inline-flex;align-items:center;gap:6px}
+  .pfx-notice-move b{font-weight:800}
+  @keyframes pfxNoticeScroll{
+    0%{transform:translateX(0)}
+    100%{transform:translateX(-50%)}
+  }
+  .pfx-notice-inner:hover .pfx-notice-move{animation-play-state:paused}
+
+  .pfx-header{
+    height:var(--pfx-header-h);
+    background:rgba(14,14,18,.9);
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--pfx-line);
+  }
+  .pfx-header-inner{
+    max-width:var(--pfx-max);margin:0 auto;padding:0 20px;height:100%;
+    display:flex;align-items:center;gap:18px;
+  }
+  .pfx-logo{
+    display:flex;align-items:center;gap:10px;flex:0 0 auto;
+  }
+  .pfx-logo-mark{
+    width:34px;height:34px;border-radius:9px;
+    background:linear-gradient(135deg,#ff3b5c,#ff7a45);
+    display:grid;place-items:center;
+    box-shadow:0 4px 18px rgba(255,59,92,.35);
+  }
+  .pfx-logo-mark svg{width:18px;height:18px}
+  .pfx-logo-text{font-size:17px;font-weight:800;letter-spacing:.02em}
+  .pfx-logo-text small{
+    display:block;font-size:9px;font-weight:600;letter-spacing:.22em;
+    color:var(--pfx-dim-2);margin-top:-2px;
+  }
+  .pfx-nav{
+    display:flex;align-items:center;gap:2px;margin-left:8px;
+  }
+  .pfx-nav a{
+    font-size:14px;color:var(--pfx-dim);padding:8px 12px;border-radius:8px;
+    transition:color .18s,background .18s;font-weight:500;
+  }
+  .pfx-nav a:hover,.pfx-nav a.pfx-active{color:#fff;background:rgba(255,255,255,.07)}
+  .pfx-header-tools{
+    margin-left:auto;display:flex;align-items:center;gap:10px;
+  }
+  .pfx-search{
+    position:relative;display:flex;align-items:center;
+    background:var(--pfx-card);border:1px solid var(--pfx-line);
+    border-radius:999px;padding:0 4px 0 14px;height:38px;
+    transition:border-color .2s,box-shadow .2s;
+  }
+  .pfx-search:focus-within{
+    border-color:rgba(255,59,92,.55);
+    box-shadow:0 0 0 3px rgba(255,59,92,.12);
+  }
+  .pfx-search input{
+    background:none;border:none;outline:none;color:var(--pfx-text);
+    font-size:13px;width:170px;padding:0;
+  }
+  .pfx-search input::placeholder{color:var(--pfx-dim-2)}
+  .pfx-search-btn{
+    width:30px;height:30px;border-radius:50%;
+    background:var(--pfx-accent);display:grid;place-items:center;
+    flex:0 0 auto;
+  }
+  .pfx-search-btn svg{width:14px;height:14px}
+  .pfx-search-tip{
+    position:absolute;top:46px;left:0;right:0;
+    background:var(--pfx-card-2);border:1px solid var(--pfx-line-strong);
+    border-radius:12px;padding:10px;font-size:12px;color:var(--pfx-dim);
+    display:none;z-index:30;box-shadow:0 16px 40px rgba(0,0,0,.55);
+  }
+  .pfx-search-tip.pfx-show{display:block}
+  .pfx-search-tip b{color:var(--pfx-accent)}
+  .pfx-upload-btn{
+    background:linear-gradient(135deg,#ff3b5c,#ff7a45);
+    color:#fff;font-size:13px;font-weight:700;
+    padding:9px 16px;border-radius:999px;flex:0 0 auto;
+    transition:transform .16s,box-shadow .16s;
+  }
+  .pfx-upload-btn:hover{transform:translateY(-1px);box-shadow:0 8px 22px rgba(255,59,92,.35)}
+  .pfx-burger{
+    display:none;width:40px;height:40px;border-radius:10px;
+    border:1px solid var(--pfx-line);place-items:center;
+  }
+  .pfx-burger span{display:block;width:17px;height:2px;background:var(--pfx-text);position:relative}
+  .pfx-burger span::before,.pfx-burger span::after{
+    content:"";position:absolute;left:0;width:17px;height:2px;background:var(--pfx-text);
+  }
+  .pfx-burger span::before{top:-6px}
+  .pfx-burger span::after{top:6px}
+
+  /* ===== 通用布局 ===== */
+  .pfx-wrap{max-width:var(--pfx-max);margin:0 auto;padding:0 20px}
+  .pfx-section{padding:72px 0;position:relative}
+  .pfx-section.pfx-alt{background:var(--pfx-bg-soft)}
+  .pfx-sec-head{
+    display:flex;align-items:flex-end;justify-content:space-between;
+    gap:20px;margin-bottom:36px;flex-wrap:wrap;
+  }
+  .pfx-sec-kicker{
+    font-size:11px;font-weight:800;letter-spacing:.24em;
+    color:var(--pfx-accent);text-transform:uppercase;margin-bottom:10px;
+    display:flex;align-items:center;gap:8px;
+  }
+  .pfx-sec-kicker::before{
+    content:"";width:22px;height:2px;background:var(--pfx-accent);display:block;
+  }
+  .pfx-sec-title{font-size:clamp(22px,3vw,32px);letter-spacing:-.01em}
+  .pfx-sec-title em{font-style:normal;color:var(--pfx-accent)}
+  .pfx-sec-desc{color:var(--pfx-dim);font-size:14px;max-width:520px;margin-top:10px}
+  .pfx-sec-more{
+    font-size:13px;color:var(--pfx-dim);border:1px solid var(--pfx-line-strong);
+    padding:8px 16px;border-radius:999px;transition:all .18s;white-space:nowrap;
+  }
+  .pfx-sec-more:hover{color:#fff;border-color:var(--pfx-accent);background:var(--pfx-accent-soft)}
+
+  /* ===== 首屏 ===== */
+  .pfx-hero{
+    position:relative;padding:64px 0 76px;overflow:hidden;
+    border-bottom:1px solid var(--pfx-line);
+  }
+  .pfx-hero::before{
+    content:"";position:absolute;inset:0;
+    background:
+      radial-gradient(700px 380px at 82% 12%,rgba(255,59,92,.20),transparent 65%),
+      radial-gradient(600px 420px at 8% 88%,rgba(46,242,198,.10),transparent 62%);
+    pointer-events:none;
+  }
+  .pfx-hero-grid{
+    position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:52px;
+    align-items:center;
+  }
+  .pfx-hero-badge{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:12px;font-weight:700;letter-spacing:.08em;
+    background:var(--pfx-accent-soft);color:#ff8fa3;
+    border:1px solid rgba(255,59,92,.35);
+    padding:5px 13px;border-radius:999px;margin-bottom:20px;
+  }
+  .pfx-hero-badge i{
+    width:6px;height:6px;border-radius:50%;background:var(--pfx-accent);
+    box-shadow:0 0 0 4px rgba(255,59,92,.2);display:block;
+    animation:pfxPulse 1.8s ease-in-out infinite;
+  }
+  @keyframes pfxPulse{0%,100%{opacity:1}50%{opacity:.35}}
+  .pfx-h1{
+    font-size:clamp(38px,5.4vw,60px);line-height:1.08;letter-spacing:-.03em;
+    margin-bottom:8px;
+  }
+  .pfx-h1 .pfx-h1-en{
+    display:block;font-size:.3em;letter-spacing:.3em;font-weight:800;
+    color:var(--pfx-dim-2);margin-top:14px;
+  }
+  .pfx-hero-slogan{
+    font-size:clamp(16px,2vw,19px);color:var(--pfx-gold);font-weight:600;
+    margin:18px 0 16px;letter-spacing:.01em;
+  }
+  .pfx-hero-intro{color:var(--pfx-dim);font-size:15px;max-width:520px}
+  .pfx-hero-intro b{color:var(--pfx-text);font-weight:600}
+  .pfx-hero-acts{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
+  .pfx-btn{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:14px;font-weight:700;padding:13px 24px;border-radius:12px;
+    transition:transform .16s,box-shadow .16s,background .16s,border-color .16s;
+  }
+  .pfx-btn-primary{
+    background:linear-gradient(135deg,#ff3b5c,#ff7a45);color:#fff;
+    box-shadow:0 8px 26px rgba(255,59,92,.28);
+  }
+  .pfx-btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(255,59,92,.4)}
+  .pfx-btn-ghost{
+    border:1px solid var(--pfx-line-strong);color:var(--pfx-text);background:rgba(255,255,255,.03);
+  }
+  .pfx-btn-ghost:hover{border-color:var(--pfx-neon);color:var(--pfx-neon);background:rgba(46,242,198,.07)}
+  .pfx-hero-stats{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:38px;
+    border-top:1px solid var(--pfx-line);padding-top:24px;
+  }
+  .pfx-stat b{display:block;font-size:clamp(20px,2.6vw,27px);letter-spacing:-.02em}
+  .pfx-stat b span{color:var(--pfx-accent);font-size:.7em}
+  .pfx-stat small{font-size:12px;color:var(--pfx-dim-2);letter-spacing:.04em}
+
+  /* 主视觉拼贴 */
+  .pfx-hero-visual{position:relative;height:460px}
+  .pfx-hero-tile{
+    position:absolute;border-radius:18px;overflow:hidden;
+    border:1px solid var(--pfx-line-strong);
+    box-shadow:0 24px 60px rgba(0,0,0,.55);
+    transition:transform .35s ease;
+  }
+  .pfx-hero-tile img{width:100%;height:100%;object-fit:cover}
+  .pfx-hero-tile.t1{width:62%;height:66%;top:0;right:0;transform:rotate(1.6deg)}
+  .pfx-hero-tile.t2{width:46%;height:42%;bottom:6%;left:0;transform:rotate(-2.4deg)}
+  .pfx-hero-tile.t3{width:34%;height:28%;top:46%;left:32%;transform:rotate(3.2deg)}
+  .pfx-hero-visual:hover .t1{transform:rotate(1.6deg) translateY(-6px)}
+  .pfx-hero-visual:hover .t2{transform:rotate(-2.4deg) translateY(-6px)}
+  .pfx-hero-visual:hover .t3{transform:rotate(3.2deg) translateY(-6px)}
+  .pfx-hero-play{
+    position:absolute;right:6%;bottom:20%;z-index:3;
+    width:64px;height:64px;border-radius:50%;
+    background:rgba(255,59,92,.95);display:grid;place-items:center;
+    box-shadow:0 0 0 10px rgba(255,59,92,.16),0 14px 36px rgba(255,59,92,.45);
+    animation:pfxFloat 3.6s ease-in-out infinite;
+  }
+  @keyframes pfxFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+  .pfx-hero-play svg{width:22px;height:22px;margin-left:3px}
+  .pfx-hero-chip{
+    position:absolute;z-index:4;font-size:11px;font-weight:700;
+    padding:5px 11px;border-radius:999px;letter-spacing:.05em;
+    backdrop-filter:blur(6px);
+  }
+  .pfx-chip-a{top:4%;left:2%;background:rgba(255,209,102,.92);color:#1a1a23}
+  .pfx-chip-b{bottom:2%;right:2%;background:rgba(46,242,198,.9);color:#10161a}
+
+  /* ===== 深度解析 ===== */
+  .pfx-about-grid{
+    display:grid;grid-template-columns:1fr 1.35fr;gap:48px;align-items:start;
+  }
+  .pfx-about-side{position:sticky;top:calc(var(--pfx-header-h) + var(--pfx-notice-h) + 24px)}
+  .pfx-about-side h2{font-size:clamp(24px,3.2vw,34px);letter-spacing:-.02em}
+  .pfx-about-side h2 em{font-style:normal;color:var(--pfx-accent)}
+  .pfx-about-side p{color:var(--pfx-dim);font-size:14px;margin-top:14px}
+  .pfx-about-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+  .pfx-about-tags span{
+    font-size:12px;color:var(--pfx-dim);border:1px solid var(--pfx-line);
+    padding:5px 11px;border-radius:999px;background:rgba(255,255,255,.02);
+  }
+  .pfx-about-body{color:var(--pfx-dim);font-size:15px}
+  .pfx-about-body h3{
+    color:var(--pfx-text);font-size:17px;margin:26px 0 10px;
+    padding-left:12px;border-left:3px solid var(--pfx-accent);
+  }
+  .pfx-about-body h3:first-child{margin-top:0}
+  .pfx-about-body p{margin-bottom:12px}
+  .pfx-about-body b{color:var(--pfx-text);font-weight:600}
+  .pfx-about-body strong{color:var(--pfx-gold);font-weight:600}
+  .pfx-about-body .pfx-quote{
+    background:var(--pfx-card);border:1px solid var(--pfx-line);
+    border-radius:12px;padding:16px 18px;margin:18px 0;
+    color:var(--pfx-text);font-size:14px;
+  }
+
+  /* ===== 焦点视频 ===== */
+  .pfx-feature-grid{
+    display:grid;grid-template-columns:1.4fr 1fr;gap:20px;
+  }
+  .pfx-feature-main{position:relative;border-radius:var(--pfx-radius);overflow:hidden;border:1px solid var(--pfx-line)}
+  .pfx-feature-main img{width:100%;height:100%;min-height:340px;object-fit:cover;transition:transform .5s}
+  .pfx-feature-main:hover img{transform:scale(1.04)}
+  .pfx-feature-overlay{
+    position:absolute;inset:0;
+    background:linear-gradient(0deg,rgba(10,10,14,.94) 0%,rgba(10,10,14,.4) 45%,transparent 78%);
+    display:flex;flex-direction:column;justify-content:flex-end;padding:26px;
+  }
+  .pfx-tag-row{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}
+  .pfx-tag{
+    font-size:11px;font-weight:700;padding:3px 10px;border-radius:6px;
+    background:rgba(255,59,92,.9);color:#fff;letter-spacing:.04em;
+  }
+  .pfx-tag.pfx-tag-soft{background:rgba(255,255,255,.14);color:#fff}
+  .pfx-feature-overlay h3{font-size:clamp(19px,2.2vw,25px);margin-bottom:8px}
+  .pfx-feature-overlay p{font-size:13px;color:#c3c3d1;max-width:560px;margin-bottom:14px}
+  .pfx-meta-row{
+    display:flex;align-items:center;gap:14px;font-size:12px;color:var(--pfx-dim-2);flex-wrap:wrap;
+  }
+  .pfx-meta-row b{color:var(--pfx-dim);font-weight:600}
+  .pfx-feature-side{display:grid;grid-template-rows:1fr 1fr;gap:20px}
+  .pfx-feature-mini{
+    display:grid;grid-template-columns:150px 1fr;gap:14px;
+    background:var(--pfx-card);border:1px solid var(--pfx-line);
+    border-radius:var(--pfx-radius);overflow:hidden;
+    transition:border-color .2s,transform .2s;
+  }
+  .pfx-feature-mini:hover{border-color:rgba(255,59,92,.5);transform:translateY(-2px)}
+  .pfx-feature-mini img{width:150px;height:100%;object-fit:cover}
+  .pfx-feature-mini-body{padding:14px 14px 14px 0;display:flex;flex-direction:column;justify-content:center}
+  .pfx-feature-mini-body h4{font-size:15px;margin-bottom:6px}
+  .pfx-feature-mini-body p{font-size:12px;color:var(--pfx-dim-2);margin-bottom:10px;
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+
+  /* ===== 视频卡片流 ===== */
+  .pfx-video-grid{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:22px;
+  }
+  .pfx-vcard{
+    background:var(--pfx-card);border:1px solid var(--pfx-line);
+    border-radius:var(--pfx-radius);overflow:hidden;
+    display:flex;flex-direction:column;
+    transition:transform .22s,border-color .22s,box-shadow .22s;
+  }
+  .pfx-vcard:hover{transform:translateY(-4px);border-color:rgba(255,59,92,.45);box-shadow:0 18px 44px rgba(0,0,0,.5)}
+  .pfx-vcover{position:relative;aspect-ratio:16/9;overflow:hidden;background:#0a0a0f}
+  .pfx-vcover img{width:100%;height:100%;object-fit:cover;transition:transform .45s}
+  .pfx-vcard:hover .pfx-vcover img{transform:scale(1.06)}
+  .pfx-vcover-shade{
+    position:absolute;inset:0;
+    background:linear-gradient(0deg,rgba(0,0,0,.5),transparent 60%);
+    pointer-events:none;
+  }
+  .pfx-vplay{
+    position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+    width:46px;height:46px;border-radius:50%;
+    background:rgba(255,59,92,.94);display:grid;place-items:center;
+    opacity:0;transition:opacity .2s;box-shadow:0 8px 26px rgba(255,59,92,.4);
+  }
+  .pfx-vcard:hover .pfx-vplay{opacity:1}
+  .pfx-vplay svg{width:16px;height:16px;margin-left:2px}
+  .pfx-vdur{
+    position:absolute;right:10px;bottom:10px;font-size:11px;font-weight:700;
+    background:rgba(0,0,0,.78);padding:2px 7px;border-radius:5px;letter-spacing:.04em;
+  }
+  .pfx-vtag{
+    position:absolute;left:10px;top:10px;font-size:11px;font-weight:700;
+    padding:3px 9px;border-radius:6px;background:rgba(255,209,102,.94);color:#1a1a23;
+  }
+  .pfx-vbody{padding:16px 16px 14px;display:flex;flex-direction:column;flex:1}
+  .pfx-vtitle{font-size:15px;margin-bottom:7px;line-height:1.5}
+  .pfx-vsum{
+    font-size:12.5px;color:var(--pfx-dim-2);line-height:1.65;margin-bottom:12px;
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+  }
+  .pfx-vfoot{
+    margin-top:auto;padding-top:12px;border-top:1px solid var(--pfx-line);
+    display:flex;align-items:center;justify-content:space-between;gap:8px;
+  }
+  .pfx-author{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--pfx-dim)}
+  .pfx-avatar{
+    width:26px;height:26px;border-radius:50%;display:grid;place-items:center;
+    font-size:11px;font-weight:800;color:#101016;flex:0 0 auto;
+  }
+  .pfx-vacts{display:flex;gap:6px}
+  .pfx-act{
+    display:inline-flex;align-items:center;gap:4px;font-size:11.5px;color:var(--pfx-dim-2);
+    padding:4px 8px;border-radius:8px;transition:background .16s,color .16s;
+  }
+  .pfx-act:hover{background:rgba(255,255,255,.06);color:var(--pfx-text)}
+  .pfx-act svg{width:13px;height:13px}
+  .pfx-act.pfx-liked{color:var(--pfx-accent)}
+  .pfx-act.pfx-liked svg{fill:var(--pfx-accent);stroke:var(--pfx-accent)}
+  .pfx-act.pfx-saved{color:var(--pfx-gold)}
+  .pfx-act.pfx-saved svg{fill:var(--pfx-gold);stroke:var(--pfx-gold)}
+
+  /* 筛选标签 */
+  .pfx-filter{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+  .pfx-filter button{
+    font-size:13px;color:var(--pfx-dim);border:1px solid var(--pfx-line);
+    padding:7px 16px;border-radius:999px;transition:all .18s;background:rgba(255,255,255,.02);
+  }
+  .pfx-filter button:hover{color:#fff;border-color:var(--pfx-line-strong)}
+  .pfx-filter button.pfx-active{
+    background:var(--pfx-accent);border-color:var(--pfx-accent);color:#fff;font-weight:700;
+  }
+  .pfx-vcard.pfx-hidden{display:none}
+
+  /* ===== 专题 ===== */
+  .pfx-topic-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  .pfx-topic{
+    position:relative;border-radius:var(--pfx-radius);overflow:hidden;
+    border:1px solid var(--pfx-line);min-height:270px;
+    display:flex;flex-direction:column;justify-content:flex-end;
+    padding:20px;transition:transform .22s,border-color .22s;
+  }
+  .pfx-topic:hover{transform:translateY(-4px);border-color:rgba(46,242,198,.45)}
+  .pfx-topic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+  .pfx-topic::after{
+    content:"";position:absolute;inset:0;z-index:-1;
+    background:linear-gradient(0deg,rgba(9,9,13,.95) 8%,rgba(9,9,13,.28) 62%,rgba(9,9,13,.1));
+  }
+  .pfx-topic span{
+    font-size:11px;font-weight:800;letter-spacing:.1em;color:var(--pfx-neon);
+    margin-bottom:8px;
+  }
+  .pfx-topic h3{font-size:17px;margin-bottom:6px}
+  .pfx-topic p{font-size:12px;color:var(--pfx-dim);margin-bottom:12px}
+  .pfx-topic small{font-size:11px;color:var(--pfx-dim-2);display:flex;align-items:center;gap:6px}
+  .pfx-topic small i{width:5px;height:5px;border-radius:50%;background:var(--pfx-neon);display:block}
+  .pfx-topic.pfx-soon small i{background:var(--pfx-gold)}
+
+  /* ===== 创作者 ===== */
+  .pfx-author-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .pfx-acard{
+    background:var(--pfx-card);border:1px solid var(--pfx-line);
+    border-radius:var(--pfx-radius);padding:22px;
+    display:flex;flex-direction:column;gap:12px;
+    transition:border-color .2s,transform .2s;
+  }
+  .pfx-acard:hover{border-color:rgba(255,209,102,.45);transform:translateY(-3px)}
+  .pfx-acard-top{display:flex;align-items:center;gap:12px}
+  .pfx-acard-ava{
+    width:50px;height:50px;border-radius:14px;display:grid;place-items:center;
+    font-size:19px;font-weight:800;color:#101016;flex:0 0 auto;
+  }
+  .pfx-acard-top h3{font-size:15.5px}
+  .pfx-acard-top small{font-size:11.5px;color:var(--pfx-dim-2);letter-spacing:.04em}
+  .pfx-acard p{font-size:13px;color:var(--pfx-dim);min-height:44px}
+  .pfx-acard-nums{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:8px;
+    font-size:11px;color:var(--pfx-dim-2);text-align:center;
+    border-top:1px solid var(--pfx-line);padding-top:12px;
+  }
+  .pfx-acard-nums b{display:block;font-size:15px;color:var(--pfx-text)}
+  .pfx-acard-btn{
+    margin-top:2px;font-size:12.5px;font-weight:700;color:var(--pfx-neon);
+    border:1px solid rgba(46,242,198,.3);padding:8px;border-radius:9px;text-align:center;
+    transition:background .18s;
+  }
+  .pfx-acard-btn:hover{background:rgba(46,242,198,.1)}
+
+  /* ===== 作品墙 ===== */
+  .pfx-wall{
+    display:grid;grid-template-columns:repeat(6,1fr);
+    grid-auto-rows:132px;gap:14px;
+  }
+  .pfx-wall-item{
+    position:relative;border-radius:13px;overflow:hidden;
+    border:1px solid var(--pfx-line);cursor:pointer;
+  }
+  .pfx-wall-item img{width:100%;height:100%;object-fit:cover;transition:transform .45s}
+  .pfx-wall-item:hover img{transform:scale(1.08)}
+  .pfx-wall-item::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(0deg,rgba(9,9,13,.85),transparent 62%);
+    opacity:0;transition:opacity .22s;
+  }
+  .pfx-wall-item:hover::after{opacity:1}
+  .pfx-wall-cap{
+    position:absolute;left:12px;bottom:10px;right:12px;z-index:2;
+    font-size:12px;font-weight:600;color:#fff;
+    opacity:0;transform:translateY(6px);transition:all .22s;
+  }
+  .pfx-wall-item:hover .pfx-wall-cap{opacity:1;transform:translateY(0)}
+  .pfx-w-a{grid-column:span 3;grid-row:span 2}
+  .pfx-w-b{grid-column:span 3;grid-row:span 1}
+  .pfx-w-c{grid-column:span 2;grid-row:span 1}
+  .pfx-w-d{grid-column:span 1;grid-row:span 1}
+  .pfx-w-e{grid-column:span 2;grid-row:span 1}
+  .pfx-w-f{grid-column:span 4;grid-row:span 1}
+
+  /* ===== 评价 ===== */
+  .pfx-voice-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .pfx-voice{
+    background:var(--pfx-card);border:1px solid var(--pfx-line);
+    border-radius:var(--pfx-radius);padding:20px;position:relative;
+  }
+  .pfx-voice::before{
+    content:"”";position:absolute;top:2px;right:18px;font-size:52px;
+    color:rgba(255,59,92,.18);font-family:Georgia,serif;line-height:1;
+  }
+  .pfx-voice p{font-size:13.5px;color:var(--pfx-dim);margin-bottom:16px;position:relative}
+  .pfx-voice-foot{display:flex;align-items:center;gap:10px;border-top:1px solid var(--pfx-line);padding-top:12px}
+  .pfx-voice-foot small{display:block;font-size:11px;color:var(--pfx-dim-2)}
+  .pfx-voice-foot b{font-size:13px;display:block}
+  .pfx-stars{color:var(--pfx-gold);font-size:11px;letter-spacing:2px}
+
+  /* ===== 更新动态 ===== */
+  .pfx-log-list{display:flex;flex-direction:column;gap:0}
+  .pfx-log{
+    display:grid;grid-template-columns:110px 1fr auto;gap:20px;align-items:center;
+    padding:18px 0;border-bottom:1px dashed var(--pfx-line);
+  }
+  .pfx-log:last-child{border-bottom:none}
+  .pfx-log time{font-size:12px;color:var(--pfx-dim-2);font-variant-numeric:tabular-nums}
+  .pfx-log h4{font-size:15px;margin-bottom:3px}
+  .pfx-log p{font-size:12.5px;color:var(--pfx-dim-2)}
+  .pfx-log-tag{
+    font-size:11px;font-weight:700;padding:3px 10px;border-radius:6px;
+    background:rgba(46,242,198,.12);color:var(--pfx-neon);white-space:nowrap;
+  }
+  .pfx-log-tag.pfx-hot{background:rgba(255,59,92,.14);color:#ff8fa3}
+  .pfx-log-tag.pfx-new{background:rgba(255,209,102,.14);color:var(--pfx-gold)}
+
+  /* ===== 榜单与FAQ双栏 ===== */
+  .pfx-two-col{display:grid;grid-template-columns:.95fr 1.05fr;gap:40px;align-items:start}
+  .pfx-rank{display:flex;flex-direction:column;gap:2px}
+  .pfx-rank-item{
+    display:flex;align-items:center;gap:14px;padding:13px 12px;border-radius:11px;
+    transition:background .16s;
+  }
+  .pfx-rank-item:hover{background:rgba(255,255,255,.04)}
+  .pfx-rank-no{
+    font-size:15px;font-weight:800;width:24px;text-align:center;
+    color:var(--pfx-dim-2);font-variant-numeric:tabular-nums;
+  }
+  .pfx-rank-item:nth-child(1) .pfx-rank-no{color:var(--pfx-accent)}
+  .pfx-rank-item:nth-child(2) .pfx-rank-no{color:var(--pfx-gold)}
+  .pfx-rank-item:nth-child(3) .pfx-rank-no{color:var(--pfx-neon)}
+  .pfx-rank-item h4{font-size:13.5px;flex:1}
+  .pfx-rank-item small{font-size:11.5px;color:var(--pfx-dim-2);white-space:nowrap}
+
+  .pfx-faq details{
+    border:1px solid var(--pfx-line);border-radius:12px;
+    margin-bottom:10px;background:var(--pfx-card);
+    overflow:hidden;transition:border-color .18s;
+  }
+  .pfx-faq details[open]{border-color:rgba(255,59,92,.4)}
+  .pfx-faq summary{
+    list-style:none;cursor:pointer;padding:15px 18px;font-size:14px;font-weight:600;
+    display:flex;align-items:center;justify-content:space-between;gap:12px;
+  }
+  .pfx-faq summary::-webkit-details-marker{display:none}
+  .pfx-faq summary::after{
+    content:"+";font-size:18px;color:var(--pfx-accent);font-weight:400;
+    transition:transform .2s;flex:0 0 auto;
+  }
+  .pfx-faq details[open] summary::after{transform:rotate(45deg)}
+  .pfx-faq details p{
+    padding:0 18px 16px;font-size:13px;color:var(--pfx-dim);line-height:1.8;
+  }
+
+  /* ===== 联系/投稿 ===== */
+  .pfx-cta{
+    position:relative;border-radius:22px;overflow:hidden;
+    border:1px solid var(--pfx-line-strong);
+    background:
+      radial-gradient(560px 260px at 88% 10%,rgba(255,59,92,.24),transparent 64%),
+      radial-gradient(480px 300px at 6% 92%,rgba(46,242,198,.14),transparent 62%),
+      var(--pfx-card);
+    padding:52px 44px;
+    display:grid;grid-template-columns:1.3fr .7fr;gap:36px;align-items:center;
+  }
+  .pfx-cta h2{font-size:clamp(24px,3.3vw,34px);letter-spacing:-.02em;margin-bottom:14px}
+  .pfx-cta h2 em{font-style:normal;color:var(--pfx-accent)}
+  .pfx-cta p{color:var(--pfx-dim);font-size:14.5px;max-width:520px}
+  .pfx-cta-acts{display:flex;flex-direction:column;gap:12px}
+  .pfx-cta-acts .pfx-btn{justify-content:center}
+  .pfx-contact-rows{display:flex;gap:20px;flex-wrap:wrap;margin-top:22px;font-size:12.5px;color:var(--pfx-dim-2)}
+  .pfx-contact-rows span b{color:var(--pfx-text);font-weight:600;margin-left:4px}
+
+  /* ===== 页脚 ===== */
+  .pfx-footer{border-top:1px solid var(--pfx-line);background:#0a0a0e;padding:52px 0 26px}
+  .pfx-footer-grid{
+    display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:34px;margin-bottom:38px;
+  }
+  .pfx-footer-brand p{font-size:12.5px;color:var(--pfx-dim-2);margin-top:14px;max-width:300px;line-height:1.85}
+  .pfx-footer-col h4{font-size:12px;letter-spacing:.16em;color:var(--pfx-dim);margin-bottom:14px;font-weight:700}
+  .pfx-footer-col a{display:block;font-size:13px;color:var(--pfx-dim-2);padding:5px 0;transition:color .16s}
+  .pfx-footer-col a:hover{color:var(--pfx-accent)}
+  .pfx-footer-bottom{
+    border-top:1px solid var(--pfx-line);padding-top:22px;
+    display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+    font-size:12px;color:var(--pfx-dim-2);
+  }
+  .pfx-footer-bottom span{display:inline-flex;align-items:center;gap:6px}
+  .pfx-dot{width:6px;height:6px;border-radius:50%;background:var(--pfx-neon);display:inline-block}
+
+  /* ===== 弹窗与Toast ===== */
+  .pfx-modal-mask{
+    position:fixed;inset:0;background:rgba(5,5,8,.78);z-index:1200;
+    display:none;place-items:center;padding:20px;
+    backdrop-filter:blur(4px);
+  }
+  .pfx-modal-mask.pfx-show{display:grid}
+  .pfx-modal{
+    width:100%;max-width:480px;background:var(--pfx-card-2);
+    border:1px solid var(--pfx-line-strong);border-radius:18px;
+    padding:26px;box-shadow:0 30px 80px rgba(0,0,0,.7);
+    animation:pfxModalIn .22s ease;
+  }
+  @keyframes pfxModalIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+  .pfx-modal h3{font-size:18px;margin-bottom:6px}
+  .pfx-modal > p{font-size:13px;color:var(--pfx-dim-2);margin-bottom:18px}
+  .pfx-modal-field{margin-bottom:13px}
+  .pfx-modal-field label{display:block;font-size:12px;color:var(--pfx-dim);margin-bottom:6px}
+  .pfx-modal-field input,.pfx-modal-field textarea,.pfx-modal-field select{
+    width:100%;background:var(--pfx-bg);border:1px solid var(--pfx-line);
+    border-radius:10px;padding:10px 12px;color:var(--pfx-text);font-size:13px;
+    outline:none;font-family:inherit;transition:border-color .18s;
+  }
+  .pfx-modal-field input:focus,.pfx-modal-field textarea:focus,.pfx-modal-field select:focus{
+    border-color:rgba(255,59,92,.55);
+  }
+  .pfx-modal-field textarea{resize:vertical;min-height:76px}
+  .pfx-modal-acts{display:flex;gap:10px;margin-top:18px}
+  .pfx-modal-acts .pfx-btn{flex:1;justify-content:center;padding:11px 16px;font-size:13px}
+  .pfx-share-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px}
+  .pfx-share-btn{
+    border:1px solid var(--pfx-line);border-radius:10px;padding:14px 6px;
+    font-size:12px;text-align:center;color:var(--pfx-dim);
+    transition:all .18s;display:flex;flex-direction:column;align-items:center;gap:7px;
+  }
+  .pfx-share-btn:hover{border-color:var(--pfx-accent);color:#fff;background:var(--pfx-accent-soft)}
+  .pfx-share-btn i{
+    width:30px;height:30px;border-radius:50%;display:grid;place-items:center;
+    background:rgba(255,255,255,.07);font-style:normal;font-weight:800;font-size:13px;
+  }
+  .pfx-toast{
+    position:fixed;left:50%;bottom:38px;transform:translate(-50%,20px);
+    background:#f4f4f8;color:#14141a;font-size:13px;font-weight:700;
+    padding:11px 22px;border-radius:999px;z-index:1400;
+    opacity:0;pointer-events:none;transition:all .28s;
+    box-shadow:0 16px 40px rgba(0,0,0,.5);white-space:nowrap;
+  }
+  .pfx-toast.pfx-show{opacity:1;transform:translate(-50%,0)}
+
+  .pfx-top-btn{
+    position:fixed;right:22px;bottom:26px;width:44px;height:44px;border-radius:50%;
+    background:var(--pfx-card-2);border:1px solid var(--pfx-line-strong);
+    display:grid;place-items:center;z-index:800;
+    opacity:0;pointer-events:none;transition:all .24s;
+  }
+  .pfx-top-btn.pfx-show{opacity:1;pointer-events:auto}
+  .pfx-top-btn:hover{border-color:var(--pfx-accent);color:var(--pfx-accent)}
+  .pfx-top-btn svg{width:16px;height:16px}
+
+  /* ===== 响应式 ===== */
+  @media (max-width:1024px){
+    .pfx-hero-grid{grid-template-columns:1fr;gap:36px}
+    .pfx-hero-visual{height:390px;max-width:560px}
+    .pfx-about-grid{grid-template-columns:1fr;gap:28px}
+    .pfx-about-side{position:static}
+    .pfx-feature-grid{grid-template-columns:1fr}
+    .pfx-video-grid{grid-template-columns:repeat(2,1fr)}
+    .pfx-topic-grid{grid-template-columns:repeat(2,1fr)}
+    .pfx-author-grid{grid-template-columns:repeat(2,1fr)}
+    .pfx-voice-grid{grid-template-columns:repeat(2,1fr)}
+    .pfx-two-col{grid-template-columns:1fr;gap:32px}
+    .pfx-cta{grid-template-columns:1fr;padding:36px 26px}
+    .pfx-footer-grid{grid-template-columns:1fr 1fr;gap:26px}
+    .pfx-nav{
+      position:absolute;top:calc(var(--pfx-header-h) + var(--pfx-notice-h));
+      left:0;right:0;background:#101018;border-bottom:1px solid var(--pfx-line);
+      flex-direction:column;align-items:stretch;padding:10px 16px 16px;gap:2px;
+      display:none;margin:0;box-shadow:0 20px 40px rgba(0,0,0,.5);
+    }
+    .pfx-nav.pfx-open{display:flex}
+    .pfx-nav a{padding:12px 10px;font-size:15px}
+    .pfx-burger{display:grid}
+    .pfx-search input{width:120px}
+    .pfx-upload-btn{display:none}
+  }
+  @media (max-width:720px){
+    .pfx-section{padding:52px 0}
+    .pfx-video-grid{grid-template-columns:1fr}
+    .pfx-topic-grid{grid-template-columns:1fr}
+    .pfx-author-grid{grid-template-columns:1fr}
+    .pfx-voice-grid{grid-template-columns:1fr}
+    .pfx-hero-stats{grid-template-columns:repeat(3,1fr);gap:8px}
+    .pfx-hero-visual{height:320px}
+    .pfx-feature-mini{grid-template-columns:110px 1fr}
+    .pfx-feature-mini img{width:110px}
+    .pfx-log{grid-template-columns:1fr;gap:6px}
+    .pfx-wall{grid-template-columns:repeat(2,1fr);grid-auto-rows:118px}
+    .pfx-w-a{grid-column:span 2;grid-row:span 2}
+    .pfx-w-b,.pfx-w-f{grid-column:span 2;grid-row:span 1}
+    .pfx-w-c,.pfx-w-e{grid-column:span 1}
+    .pfx-w-d{grid-column:span 1}
+    .pfx-footer-grid{grid-template-columns:1fr;gap:22px}
+    .pfx-search{display:none}
+    .pfx-cta{padding:30px 20px}
+    .pfx-share-row{grid-template-columns:repeat(2,1fr)}
+  }
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告 + 页头 -->
+<div class="pfx-sticky-wrap">
+  <div class="pfx-notice-bar" role="region" aria-label="站内公告">
+    <div class="pfx-notice-inner">
+      <span class="pfx-notice-tag">更新</span>
+      <div class="pfx-notice-track">
+        <div class="pfx-notice-move" id="pfxNoticeMove">
+          <span>◆ 11月19日上线「城市夜航」第三季，新增 6 部原创短片</span>
+          <span>◆ 创作者扶持计划 2026 冬季批报名通道开启，限 120 席</span>
+          <span>◆ 品牌故事片《镜头之后》幕后特辑官方发布</span>
+          <span>◆ 高清片源下载客户端 v4.2 上线，支持批量整理功能</span>
+          <span>◆ 11月19日上线「城市夜航」第三季，新增 6 部原创短片</span>
+          <span>◆ 创作者扶持计划 2026 冬季批报名通道开启，限 120 席</span>
+          <span>◆ 品牌故事片《镜头之后》幕后特辑官方发布</span>
+          <span>◆ 高清片源下载客户端 v4.2 上线，支持批量整理功能</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="pfx-header">
+    <div class="pfx-header-inner">
+      <a href="#pfxTop" class="pfx-logo" aria-label="先锋成人资源站官网首页">
+        <span class="pfx-logo-mark">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 4 L20 12 L7 20 Z" fill="#fff"/></svg>
+        </span>
+        <span class="pfx-logo-text">先锋成人资源站<small>PIONEER VIDEO</small></span>
+      </a>
+      <nav class="pfx-nav" id="pfxNav" aria-label="主导航">
+        <a href="#pfxTop" class="pfx-active">首页</a>
+        <a href="#pfxFocus">焦点内容</a>
+        <a href="#pfxVideos">热门影像</a>
+        <a href="#pfxTopics">专题企划</a>
+        <a href="#pfxCreators">创作者</a>
+        <a href="#pfxWall">影像墙</a>
+        <a href="#pfxNews">企业动态</a>
+        <a href="#pfxHelp">帮助</a>
+      </nav>
+      <div class="pfx-header-tools">
+        <div class="pfx-search">
+          <input type="text" id="pfxSearchInput" placeholder="搜索片名 / 创作者 / 话题" aria-label="站内搜索">
+          <button class="pfx-search-btn" id="pfxSearchBtn" aria-label="执行搜索">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5 L21 21"/></svg>
+          </button>
+          <div class="pfx-search-tip" id="pfxSearchTip"></div>
+        </div>
+        <button class="pfx-upload-btn" id="pfxUploadTop">投稿入口</button>
+        <button class="pfx-burger" id="pfxBurger" aria-label="展开导航菜单"><span></span></button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="pfxTop">
+
+  <!-- 首屏 -->
+  <section class="pfx-hero">
+    <div class="pfx-wrap">
+      <div class="pfx-hero-grid">
+        <div class="pfx-hero-copy">
+          <div class="pfx-hero-badge"><i></i>品牌官方网站 · 正版高清内容平台</div>
+          <h1 class="pfx-h1">先锋成人资源站<span class="pfx-h1-en">PIONEER ADULT VIDEO</span></h1>
+          <p class="pfx-hero-slogan">以创作为先，以品质为锋——面向成年的原创影像内容社区</p>
+          <p class="pfx-hero-intro">
+            先锋成人资源站是一家<b>持续运营</b>的成人向影像品牌，官方网站聚焦原创短片、系列剧集与创作者纪录片的制作与分发。我们以严格的内容审核、清晰的分级说明与稳定的高清播放体验，为成年用户提供值得信赖的观看环境，也为签约创作者与企业伙伴搭建一个<b>多元、包容、专业</b>的内容生态。深耕垂直领域多年，平台坚持<b>正版授权</b>与<b>用户至上</b>，把每一次上传与下载、每一场专题与比赛，都当作与社区共同成长的机会。
+          </p>
+          <div class="pfx-hero-acts">
+            <a href="#pfxVideos" class="pfx-btn pfx-btn-primary">
+              进入影像频道
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M5 12 H19 M13 6 L19 12 L13 18"/></svg>
+            </a>
+            <a href="#pfxAbout" class="pfx-btn pfx-btn-ghost">了解品牌故事</a>
+          </div>
+          <div class="pfx-hero-stats">
+            <div class="pfx-stat"><b>1,280<span>+</span></b><small>原创影像作品</small></div>
+            <div class="pfx-stat"><b>96<span>万</span></b><small>注册成年用户</small></div>
+            <div class="pfx-stat"><b>210<span>位</span></b><small>签约创作者</small></div>
+          </div>
+        </div>
+        <div class="pfx-hero-visual" aria-hidden="true">
+          <div class="pfx-hero-tile t1">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ff3b5c'/%3E%3Cstop offset='1' stop-color='%23441430'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23g1)'/%3E%3Ccircle cx='470' cy='120' r='150' fill='%23ff7a45' opacity='.35'/%3E%3Cpath d='M0 300 Q160 200 320 280 T640 240 V360 H0Z' fill='%232a0f22' opacity='.85'/%3E%3Cg fill='%23ffd166' opacity='.9'%3E%3Ccircle cx='120' cy='90' r='4'/%3E%3Ccircle cx='180' cy='140' r='3'/%3E%3Ccircle cx='260' cy='80' r='5'/%3E%3Ccircle cx='360' cy='150' r='3'/%3E%3C/g%3E%3Crect x='60' y='250' width='150' height='8' rx='4' fill='%23fff' opacity='.33'/%3E%3Crect x='60' y='272' width='96' height='8' rx='4' fill='%23fff' opacity='.2'/%3E%3C/svg%3E" alt="先锋成人资源站品牌主视觉：暖红色调夜景与几何光点构成的首屏拼贴">
+          </div>
+          <div class="pfx-hero-tile t2">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 400'%3E%3Cdefs%3E%3ClinearGradient id='g2' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23131921'/%3E%3Cstop offset='1' stop-color='%232ef2c6' stop-opacity='.55'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='400' fill='url(%23g2)'/%3E%3Cg stroke='%23ffffff' stroke-opacity='.22' fill='none'%3E%3Ccircle cx='240' cy='200' r='120'/%3E%3Ccircle cx='240' cy='200' r='78'/%3E%3Ccircle cx='240' cy='200' r='38'/%3E%3C/g%3E%3Cpath d='M210 182 L268 200 L210 218 Z' fill='%23fff'/%3E%3C/svg%3E" alt="先锋成人资源站播放意象封面：青绿同心圆与白色播放三角">
+          </div>
+          <div class="pfx-hero-tile t3">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 240'%3E%3Crect width='320' height='240' fill='%231c1420'/%3E%3Cg stroke='%23ffd166' stroke-width='2' stroke-opacity='.7' fill='none'%3E%3Cpath d='M40 200 L100 90 L160 200 Z'/%3E%3Cpath d='M150 200 L210 70 L270 200 Z'/%3E%3C/g%3E%3Ccircle cx='250' cy='58' r='22' fill='%23ff3b5c' opacity='.8'/%3E%3C/svg%3E" alt="先锋成人资源站几何山形封面：琥珀描线山峰与红色圆点">
+          </div>
+          <span class="pfx-hero-chip pfx-chip-a">官方发布</span>
+          <span class="pfx-hero-chip pfx-chip-b">18+ 分级内容</span>
+          <div class="pfx-hero-play" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="#fff"><path d="M7 4 L20 12 L7 20 Z"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 深度解析 -->
+  <section class="pfx-section pfx-alt" id="pfxAbout">
+    <div class="pfx-wrap">
+      <div class="pfx-about-grid">
+        <aside class="pfx-about-side">
+          <div class="pfx-sec-kicker">品牌深度解析</div>
+          <h2>我们如何理解<br><em>先锋成人资源站</em></h2>
+          <p>从一间小型剪辑工作室，到拥有完整内容生态的影像品牌，先锋成人资源站走过了七年。这里是官方网站对自我的完整说明。</p>
+          <div class="pfx-about-tags">
+            <span>官方网站</span><span>正版授权</span><span>高清画质</span>
+            <span>内容生态</span><span>企业运营</span><span>创作者扶持</span>
+            <span>行业领先</span><span>社会责任</span>
+          </div>
+        </aside>
+        <div class="pfx-about-body">
+          <h3>一、定位：成年向影像的专业内容平台</h3>
+          <p>先锋成人资源站并非单纯的片库集合，而是一个以<strong>原创内容</strong>为核心资产的影像品牌。我们与签约创作者共同完成选题、拍摄、剪辑与后期调色，把每一部作品当作可以长期存留的影像档案。作为品牌官方网站，这里承担三重角色：对外的品牌窗口、对内的内容中台、对社区的沟通入口。用户在这里看到的不是随手拼凑的合集，而是经过选题会、剧本评估、成片复审三层流程打磨的精品内容。</p>
+          <p>我们清楚地知道，成人向内容行业长期存在信息不透明、质量参差不齐的问题。先锋成人资源站选择了一条更慢的路：坚持正版授权，坚持分级说明，坚持对每一位创作者的作品做出明确的版权登记。这让平台的更新节奏不算最快，但每一部上线的内容都能追溯到创作者与制作团队，用户的选择因此变得清晰。</p>
+
+          <h3>二、内容生态：创作者、用户与企业三方共建</h3>
+          <p>在先锋成人资源站的内容生态里，创作者是第一生产力。我们提供从设备租赁、场地协调到后期调色的一站式支持，让创作者把精力放在叙事本身。企业伙伴则通过品牌联名、专题共创的方式参与进来，让影像获得更多元的表达空间。用户不只是观看者，他们的收藏、评论、投票与投稿，共同构成了内容生态的反馈回路。</p>
+          <p>平台设有创作者扶持计划，每年分春秋两季开放报名。入选者可获得制作补贴、首页推荐位与专属运营对接。2026 年冬季批将开放 120 个席位，覆盖剧情短片、纪录访谈、实验影像三个方向。我们希望用持续的资源投入，让更多有想法的人有机会完成自己的第一部作品。</p>
+          <div class="pfx-quote">“我们不追逐流量峰值，只在意作品能否被认真看完。”——先锋成人资源站内容委员会年度公开信摘录</div>
+
+          <h3>三、品质标准：从拍摄到播放的每一环</h3>
+          <p>高清不是一句口号。平台对上线内容执行统一的技术规范：分辨率不低于 1080P，码率与音频响度按平台标准校准，封面与简介需通过编辑复审。播放端支持多码率自适应，弱网环境下也能保持稳定。下载客户端提供离线整理功能，方便用户在自有设备上归档收藏，所有下载行为均经过授权校验。</p>
+          <p>在内容安全层面，先锋成人资源站建立了完整的年龄核验与分级提示机制。所有涉及成人的内容均标注明确分级，未完成验证的访问请求会被礼貌拦截。这套机制不是阻碍，而是品牌对<strong>社会责任</strong>的正面回应——一个可持续运营的社区，必须先建立清晰的边界。</p>
+
+          <h3>四、社区与口碑：真实用户的长期陪伴</h3>
+          <p>七年时间里，先锋成人资源站积累了 96 万注册用户。他们中有深夜剪辑的独立导演，有每周固定追更的上班族，也有把平台当作影像参考素材库的学生。社区里的评论往往比作品本身更长：有人讨论一场戏的布光，有人分享自己的创作尝试，也有人只是留下一句“看完了，谢谢你”。这些真实的反馈，让品牌的口碑不是靠投放堆出来的，而是靠一部一部作品攒出来的。</p>
+          <p>平台每年举办影像挑战赛与年度投票，鼓励用户上传自己的短片参与评选。比赛不收报名费，评选标准公开透明，获奖作品会进入年度精选专题。我们相信，<strong>陪伴</strong>与<strong>成长</strong>是社区最珍贵的两件事，而先锋成人资源站愿意做那个长期在场的组织者。</p>
+
+          <h3>五、未来：做值得信赖的长期品牌</h3>
+          <p>接下来的一年，先锋成人资源站将把重心放在三件事上：其一，扩充原创剧集产能，计划推出 12 部系列作品；其二，升级创作者工具链，提供脚本灵感库与剪辑思路模板；其三，完善企业合作体系，与更多品牌共同探索成人向内容的表达边界。我们不做短期爆款，只想成为一个用户首选、值得信赖的影像品牌。</p>
+          <p>如果你也是影像的实践者，欢迎通过官方网站的投稿入口联系我们。先锋成人资源站始终为认真创作的人留着一扇门。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 焦点内容 -->
+  <section class="pfx-section" id="pfxFocus">
+    <div class="pfx-wrap">
+      <div class="pfx-sec-head">
+        <div>
+          <div class="pfx-sec-kicker">Focus · 焦点内容</div>
+          <h2 class="pfx-sec-title">本周<em>重点推荐</em></h2>
+          <p class="pfx-sec-desc">由编辑团队与内容委员会共同选出的焦点作品，覆盖剧情、纪录与实验影像三类方向。</p>
+        </div>
+        <a href="#pfxVideos" class="pfx-sec-more">查看全部影像 →</a>
+      </div>
+      <div class="pfx-feature-grid">
+        <article class="pfx-feature-main">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23110b16'/%3E%3Cstop offset='.55' stop-color='%23471830'/%3E%3Cstop offset='1' stop-color='%23ff3b5c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23f1)'/%3E%3Cg fill='none' stroke='%23ffd166' stroke-opacity='.55' stroke-width='1.6'%3E%3Crect x='120' y='90' width='220' height='140' rx='10'/%3E%3Crect x='380' y='150' width='280' height='180' rx='10'/%3E%3C/g%3E%3Ccircle cx='620' cy='110' r='58' fill='%23ffd166' opacity='.2'/%3E%3Cpath d='M0 400 Q200 320 420 380 T800 350 V450 H0Z' fill='%230c0810' opacity='.9'/%3E%3C/svg%3E" alt="焦点作品《城市夜航》第三季封面：深红夜色中的取景框构图">
+          <div class="pfx-feature-overlay">
+            <div class="pfx-tag-row">
+              <span class="pfx-tag">官方发布</span>
+              <span class="pfx-tag pfx-tag-soft">系列剧集</span>
+              <span class="pfx-tag pfx-tag-soft">高清</span>
+            </div>
+            <h3>《城市夜航》第三季：六段关于深夜的影像档案</h3>
+            <p>历时七个月跟拍，六位创作者分别记录城市凌晨一点到四点的真实切片。从便利店到末班车，从加班楼到天台，镜头把夜晚还给夜晚本身。</p>
+            <div class="pfx-meta-row">
+              <span>导演 <b>林见野</b></span>
+              <span>时长 <b>48:20</b></span>
+              <span>更新 <b>11月19日</b></span>
+            </div>
+          </div>
+        </article>
+        <div class="pfx-feature-side">
+          <article class="pfx-feature-mini">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%230f1a1e'/%3E%3Cg stroke='%232ef2c6' stroke-width='2' fill='none' stroke-opacity='.7'%3E%3Cpath d='M20 170 L80 70 L140 170'/%3E%3Cpath d='M120 170 L180 50 L240 170'/%3E%3Cpath d='M210 170 L260 100 L300 170'/%3E%3C/g%3E%3Ccircle cx='60' cy='46' r='16' fill='%23ffd166' opacity='.8'/%3E%3C/svg%3E" alt="纪录短片《镜头之后》封面：青绿描线山形与金色光点">
+            <div class="pfx-feature-mini-body">
+              <h4>《镜头之后》幕后特辑</h4>
+              <p>一次完整的剧组跟拍，记录创作者在片场之外的犹豫与坚持。</p>
+              <div class="pfx-meta-row"><span>纪录 · 26:15</span></div>
+            </div>
+          </article>
+          <article class="pfx-feature-mini">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%231d1420'/%3E%3Cg fill='%23ff7a45' opacity='.85'%3E%3Ccircle cx='90' cy='100' r='46'/%3E%3Ccircle cx='180' cy='100' r='46' opacity='.5'/%3E%3Ccircle cx='250' cy='100' r='30' opacity='.35'/%3E%3C/g%3E%3Crect x='0' y='160' width='320' height='40' fill='%23110b16'/%3E%3C/svg%3E" alt="实验影像《橙室》封面：暖橙色同心圆与暗色地面">
+            <div class="pfx-feature-mini-body">
+              <h4>实验影像《橙室》</h4>
+              <p>单场景、单机位、十八分钟长镜头，把空间与情绪一起压缩。</p>
+              <div class="pfx-meta-row"><span>实验 · 18:02</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 热门影像流 -->
+  <section class="pfx-section pfx-alt" id="pfxVideos">
+    <div class="pfx-wrap">
+      <div class="pfx-sec-head">
+        <div>
+          <div class="pfx-sec-kicker">Stream · 热门影像</div>
+          <h2 class="pfx-sec-title">社区正在看的<em>作品</em></h2>
+          <p class="pfx-sec-desc">按标签筛选感兴趣的方向，点击卡片上的操作按钮可点赞、收藏或展开评论。所有内容均为平台原创或正版授权。</p>
+        </div>
+      </div>
+
+      <div class="pfx-filter" id="pfxFilter" role="tablist" aria-label="影像分类筛选">
+        <button class="pfx-active" data-pfx-filter="all">全部</button>
+        <button data-pfx-filter="剧情">剧情短片</button>
+        <button data-pfx-filter="纪录">纪录访谈</button>
+        <button data-pfx-filter="实验">实验影像</button>
+        <button data-pfx-filter="访谈">创作者访谈</button>
+        <button data-pfx-filter="幕后">创作幕后</button>
+      </div>
+
+      <div class="pfx-video-grid" id="pfxVideoGrid">
+
+        <article class="pfx-vcard" data-pfx-cat="剧情">
+          <div class="pfx-vcover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='v1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23241019'/%3E%3Cstop offset='1' stop-color='%23ff3b5c' stop-opacity='.7'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23v1)'/%3E%3Cpath d='M40 220 L140 90 L240 220 Z' fill='%23110b16' opacity='.6'/%3E%3Ccircle cx='360' cy='90' r='50' fill='%23ffd166' opacity='.4'/%3E%3C/svg%3E" alt="剧情短片《第七个夜晚》封面：暗红渐变与三角剪影">
+            <div class="pfx-vcover-shade"></div>
+            <span class="pfx-vtag">剧情</span>
+            <span class="pfx-vdur">24:08</span>
+            <span class="pfx-vplay"><svg viewBox="0 0 24 24" fill="#fff"><path d="M7 4 L20 12 L7 20 Z"/></svg></span>
+          </div>
+          <div class="pfx-vbody">
+            <h3 class="pfx-vtitle">第七个夜晚：一场没有台词的重逢</h3>
+            <p class="pfx-vsum">两位旧友在雨夜的公交站相遇，全片没有一句台词，只用呼吸与雨声推进叙事。</p>
+            <div class="pfx-vfoot">
+              <div class="pfx-author"><span class="pfx-avatar" style="background:#ff7a45">林</span>林见野</div>
+              <div class="pfx-vacts">
+                <button class="pfx-act" data-pfx-like aria-label="点赞"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20 C5 15 3 11 5.5 8 C8 5 12 7 12 10 C12 7 16 5 18.5 8 C21 11 19 15 12 20Z"/></svg><span>1.2k</span></button>
+                <button class="pfx-act" data-pfx-save aria-label="收藏"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4 H18 V20 L12 16 L6 20Z"/></svg></button>
+                <button class="pfx-act" data-pfx-share aria-label="分享"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="12" r="2.6"/><circle cx="18" cy="6" r="2.6"/><circle cx="18" cy="18" r="2.6"/><path d="M8.2 10.6 L15.8 7.4 M8.2 13.4 L15.8 16.6"/></svg></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="pfx-vcard" data-pfx-cat="纪录">
+          <div class="pfx-vcover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%230e1a1d'/%3E%3Cg stroke='%232ef2c6' stroke-width='2' fill='none' stroke-opacity='.65'%3E%3Cpath d='M30 220 Q120 120 220 200 T450 180'/%3E%3Cpath d='M30 240 Q140 150 240 220 T450 210' stroke-opacity='.35'/%3E%3C/g%3E%3Ccircle cx='400' cy='70' r='34' fill='%23ffd166' opacity='.65'/%3E%3C/svg%3E" alt="纪录访谈《夜班清单》封面：青绿曲线与金色圆点构成的城市轮廓">
+            <div class="pfx-vcover-shade"></div>
+            <span class="pfx-vtag" style="background:rgba(46,242,198,.9);color:#10161a">纪录</span>
+            <span class="pfx-vdur">32:41</span>
+            <span class="pfx-vplay"><svg viewBox="0 0 24 24" fill="#fff"><path d="M7 4 L20 12 L7 20 Z"/></svg></span>
+          </div>
+          <div class="pfx-vbody">
+            <h3 class="pfx-vtitle">夜班清单：三个人的凌晨四点</h3>
+            <p class="pfx-vsum">便利店店员、代驾司机、急诊护士，三组跟拍交叉剪辑，拼出一座城市最安静的时刻。</p>
+            <div class="pfx-vfoot">
+              <div class="pfx-author"><span class="pfx-avatar" style="background:#2ef2c6">苏</span>苏北镜头</div>
+              <div class="pfx-vacts">
+                <button class="pfx-act" data-pfx-like aria-label="点赞"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20 C5 15 3 11 5.5 8 C8 5 12 7 12 10 C12 7 16 5 18.5 8 C21 11 19 15 12 20Z"/></svg><span>986</span></button>
+                <button class="pfx-act" data-pfx-save aria-label="收藏"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4 H18 V20 L12 16 L6 20Z"/></svg></button>
+                <button class="pfx-act" data-pfx-share aria-label="分享"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="12" r="2.6"/><circle cx="18" cy="6" r="2.6"/><circle cx="18" cy="18" r="2.6"/><path d="M8.2 10.6 L15.8 7.4 M8.2 13.4 L15.8 16.6"/></svg></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="pfx-vcard" data-pfx-cat="实验">
+          <div class="pfx-vcover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%2314131c'/%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.5' stroke-width='1.4'%3E%3Crect x='60' y='50' width='150' height='90'/%3E%3Crect x='100' y='90' width='230' height='120'/%3E%3Crect x='210' y='40' width='190' height='90'/%3E%3C/g%3E%3Ccircle cx='380' cy='200' r='40' fill='%23ff3b5c' opacity='.6'/%3E%3C/svg%3E" alt="实验影像《错帧》封面：白色线框叠影与红色圆形">
+            <div class="pfx-vcover-shade"></div>
+            <span class="pfx-vtag" style="background:rgba(255,255,255,.9);color:#101016">实验</span>
+            <span class="pfx-vdur">12:30</span>
+            <span class="pfx-vplay"><svg viewBox="0 0 24 24" fill="#fff"><path d="M7 4 L20 12 L7 20 Z"/></svg></span>
+          </div>
+          <div class="pfx-vbody">
+            <h3 class="pfx-vtitle">错帧：把同一段素材倒放七次</h3>
+            <p class="pfx-vsum">一次关于时间与记忆的剪辑实验，同一段素材在不同速度与顺序下呈现出完全不同的情绪。</p>
+            <div class="pfx-vfoot">
+              <div class="pfx-author"><span class="pfx-avatar" style="background:#c3a6ff">周</span>周屿实验</div>
+              <div class="pfx-vacts">
+                <button class="pfx-act" data-pfx-like aria-label="点赞"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20 C5 15 3 11 5.5 8 C8 5 12 7 12 10 C12 7 16 5 18.5 8 C21 11 19 15 12 20Z"/></svg><span>751</span></button>
+                <button class="pfx-act" data-pfx-save aria-label="收藏"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4 H18 V20 L12 16 L6 20Z"/></svg></button>
+                <button class="pfx-act" data-pfx-share aria-label="分享"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="12" r="2.6"/><circle cx="18" cy="6" r="2.6"/><circle cx="18" cy="18" r="2.6"/><path d="M8.2 10.6 L15.8 7.4 M8.2 13.4 L15.8 16.6"/></svg></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="pfx-vcard" data-pfx-cat="访谈">
+          <div class="pfx-vcover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%231b1526'/%3E%3Ccircle cx='140' cy='135' r='58' fill='%23ffd166' opacity='.7'/%3E%3Ccircle cx='250' cy='135' r='58' fill='%23ff7a45' opacity='.45'/%3E%3Crect x='60' y='215' width='360' height='3' fill='%23ffffff' opacity='.25'/%3E%3C/svg%3E" alt="创作者访谈《她说镜头会记得》封面：金色与橙色圆形对话意象">
+            <div class="pfx-vcover-shade"></div>
+            <span class="pfx-vtag" style="background:rgba(255,209,102,.95);color:#1a1a23">访谈</span>
+            <span class="pfx-vdur">41:12</span>
+            <span class="pfx-vplay"><svg viewBox="0 0 24 24" fill="#fff"><path d="M7 4 L20 12 L7 20 Z"/></svg></span>
+          </div>
+          <div class="pfx-vbody">
+            <h3 class="pfx-vtitle">她说镜头会记得：与三位女性导演对谈</h3>
+            <p class="pfx-vsum">聊创作动机、聊行业偏见、聊如何在一个被误解的领域里坚持表达。访谈长达四十分钟，几乎没有剪辑。</p>
+            <div class="pfx-vfoot">
+              <div class="pfx-author"><span class="pfx-avatar" style="background:#ffd166">沈</span>沈之问</div>
+              <div class="pfx-vacts">
+                <button class="pfx-act" data-pfx-like aria-label="点赞"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20 C5 15 3 11 5.5 8 C8 5 12 7 12 10 C12 7 16 5 18.5 8 C21 11 19 15 12 20Z"/></svg><span>1.5k</span></button>
+                <button class="pfx-act" data-pfx-save aria-label="收藏"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4 H18 V20 L12 16 L6 20Z"/></svg></button>
+                <button class="pfx-act" data-pfx-share aria-label="分享"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="12" r="2.6"/><circle cx="18" cy="6" r="2.6"/><circle cx="18" cy="18" r="2.6"/><path d="M8.2 10.6 L15.8 7.4 M8.2 13.4 L15.8 16.6"/></svg></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="pfx-vcard" data-pfx-cat="幕后">
+          <div class="pfx-vcover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%2310161a'/%3E%3Cg stroke='%232ef2c6' stroke-width='1.6' fill='none' stroke-opacity='.6'%3E%3Cpath d='M40 200 L200 60 L360 200'/%3E%3Cpath d='M120 200 L280 60 L440 200' stroke-opacity='.3'/%3E%3C/g%3E%3Crect x='180' y='110' width='120' height='80' rx='8' fill='%23ff3b5c' opacity='.5'/%3E%3C/svg%3E" alt="创作幕后《一场戏的诞生》封面：青绿光线框与红色矩形">
+            <div class="pfx-vcover-shade"></div>
+            <span class="pfx-vtag" style="background:rgba(195,166,255,.9);color:#101016">幕后</span>
+            <span class="pfx-vdur">19:44</span>
+            <span class="pfx-vplay"><svg viewBox="0 0 24 24" fill="#fff"><path d="M7 4 L20 12 L7 20 Z"/></svg></span>
+          </div>
+          <div class="pfx-vbody">
+            <h3 class="pfx-vtitle">一场戏的诞生：从剧本围读到第 37 次重拍</h3>
+            <p class="pfx-vsum">完整记录一个三分钟镜头的诞生过程，包括两次推翻重写的剧本与一次临时换景。</p>
+            <div class="pfx-vfoot">
+              <div class="pfx-author"><span class="pfx-avatar" style="background:#2ef2c6">制</span>制造间</div>
+              <div class="pfx-vacts">
+                <button class="pfx-act" data-pfx-like aria-label="点赞"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20 C5 15 3 11 5.5 8 C8 5 12 7 12 10 C12 7 16 5 18.5 8 C21 11 19 15 12 20Z"/></svg><span>642</span></button>
+                <button class="pfx-act" data-pfx-save aria-label="收藏"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4 H18 V20 L12 16 L6 20Z"/></svg></button>
+                <button class="pfx-act" data-pfx-share aria-label="分享"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="12" r="2.6"/><circle cx="18" cy="6" r="2.6"/><circle cx="18" cy="18" r="2.6"/><path d="M8.2 10.6 L15.8 7.4 M8.2 13.4 L15.8 16.6"/></svg></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="pfx-vcard" data-pfx-cat="剧情">
+          <div class="pfx-vcover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%231a1013'/%3E%3Cg fill='%23ff3b5c' opacity='.55'%3E%3Ccircle cx='90' cy='200' r='60'/%3E%3Ccircle cx='200' cy='200' r='60' opacity='.4'/%3E%3Ccircle cx='310' cy='200' r='60' opacity='.25'/%3E%3C/g%3E%3Cpath d='M0 120 Q120 40 240 120 T480 100 V270 H0Z' fill='%230c0810' opacity='.7'/%3E%3C/svg%3E" alt="剧情短片《我们不说再见》封面：红色圆点渐隐与暗色波浪">
+            <div class="pfx-vcover-shade"></div>
+            <span class="pfx-vtag">剧情</span>
+            <span class="pfx-vdur">27:55</span>
+            <span class="pfx-vplay"><svg viewBox="0 0 24 24" fill="#fff"><path d="M7 4 L20 12 L7 20 Z"/></svg></span>
+          </div>
+          <div class="pfx-vbody">
+            <h3 class="pfx-vtitle">我们不说再见：一间即将关停的放映厅</h3>
+            <p class="pfx-vsum">老放映厅的最后一周，老板、常客与一只猫，共同完成最后的十场放映。</p>
+            <div class="pfx-vfoot">
+              <div class="pfx-author"><span class="pfx-avatar" style="background:#ff7a45">陈</span>陈默影像</div>
+              <div class="pfx-vacts">
+                <button class="pfx-act" data-pfx-like aria-label="点赞"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20 C5 15 3 11 5.5 8 C8 5 12 7 12 10 C12 7 16 5 18.5 8 C21 11 19 15 12 20Z"/></svg><span>1.9k</span></button>
+                <button class="pfx-act" data-pfx-save aria-label="收藏"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4 H18 V20 L12 16 L6 20Z"/></svg></button>
+                <button class="pfx-act" data-pfx-share aria-label="分享"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="12" r="2.6"/><circle cx="18" cy="6" r="2.6"/><circle cx="18" cy="18" r="2.6"/><path d="M8.2 10.6 L15.8 7.4 M8.2 13.4 L15.8 16.6"/></svg></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 专题企划 -->
+  <section class="pfx-section" id="pfxTopics">
+    <div class="pfx-wrap">
+      <div class="pfx-sec-head">
+        <div>
+          <div class="pfx-sec-kicker">Series · 专题企划</div>
+          <h2 class="pfx-sec-title">四个正在进行的<em>长期企划</em></h2>
+          <p class="pfx-sec-desc">专题由平台策划、创作者执行，按季更新。每个专题都有明确的主题边界与更新节奏。</p>
+        </div>
+      </div>
+      <div class="pfx-topic-grid">
+        <article class="pfx-topic">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Cdefs%3E%3ClinearGradient id='t1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23200f1a'/%3E%3Cstop offset='1' stop-color='%23ff3b5c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='500' fill='url(%23t1)'/%3E%3Cg stroke='%23ffffff' stroke-opacity='.35' fill='none'%3E%3Cpath d='M40 400 L200 120 L360 400'/%3E%3Cpath d='M110 400 L200 220 L290 400'/%3E%3C/g%3E%3Ccircle cx='300' cy='100' r='44' fill='%23ffd166' opacity='.6'/%3E%3C/svg%3E" alt="专题《城市夜航》封面：暗红渐变三角与金色圆点">
+          <span>SEASON 03</span>
+          <h3>城市夜航</h3>
+          <p>关于深夜的系列纪录，每季六部，已更新至第三季。</p>
+          <small><i></i>更新中 · 18 部作品</small>
+        </article>
+        <article class="pfx-topic">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Crect width='400' height='500' fill='%230e1a1d'/%3E%3Cg stroke='%232ef2c6' stroke-width='2' fill='none' stroke-opacity='.6'%3E%3Ccircle cx='200' cy='220' r='120'/%3E%3Ccircle cx='200' cy='220' r='80'/%3E%3Ccircle cx='200' cy='220' r='40'/%3E%3C/g%3E%3Cpath d='M185 205 L220 220 L185 235 Z' fill='%23fff'/%3E%3C/svg%3E" alt="专题《创作者的一百天》封面：青绿同心圆与播放三角">
+          <span>CHALLENGE</span>
+          <h3>创作者的一百天</h3>
+          <p>百天打卡式创作挑战，记录从零到成片的完整过程。</p>
+          <small><i></i>报名中 · 120 席</small>
+        </article>
+        <article class="pfx-topic">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Crect width='400' height='500' fill='%231d1420'/%3E%3Cg fill='%23ffd166' opacity='.75'%3E%3Crect x='60' y='300' width='60' height='120'/%3E%3Crect x='150' y='240' width='60' height='180'/%3E%3Crect x='240' y='180' width='60' height='240' opacity='.6'/%3E%3C/g%3E%3Ccircle cx='300' cy='100' r='36' fill='%23ff3b5c' opacity='.7'/%3E%3C/svg%3E" alt="专题《镜头之后》封面：金色柱状图与红色圆点">
+          <span>DOCUMENTARY</span>
+          <h3>镜头之后</h3>
+          <p>走近创作者的工作现场，记录作品之外的犹豫与坚持。</p>
+          <small><i></i>更新中 · 9 部作品</small>
+        </article>
+        <article class="pfx-topic pfx-soon">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Crect width='400' height='500' fill='%2314131c'/%3E%3Cg stroke='%23ffffff' stroke-opacity='.4' fill='none' stroke-width='1.5'%3E%3Cpath d='M40 440 L200 160 L360 440'/%3E%3Cpath d='M40 440 L360 160' stroke-opacity='.2'/%3E%3C/g%3E%3Crect x='150' y='300' width='100' height='100' rx='10' fill='%232ef2c6' opacity='.35'/%3E%3C/svg%3E" alt="专题《成人向叙事》封面：白色线框与青绿方块">
+          <span>COMING 2027</span>
+          <h3>成人向叙事</h3>
+          <p>一场关于边界、表达与尊重的行业对谈，计划跨年上线。</p>
+          <small><i></i>筹备中 · 敬请期待</small>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者矩阵 -->
+  <section class="pfx-section pfx-alt" id="pfxCreators">
+    <div class="pfx-wrap">
+      <div class="pfx-sec-head">
+        <div>
+          <div class="pfx-sec-kicker">Creators · 创作者矩阵</div>
+          <h2 class="pfx-sec-title">与品牌<em>长期合作</em>的面孔</h2>
+          <p class="pfx-sec-desc">他们来自不同城市、不同背景，共同点是认真对待每一帧画面。点击卡片可查看创作者档案与作品列表。</p>
+        </div>
+      </div>
+      <div class="pfx-author-grid" id="pfxAuthorGrid">
+        <article class="pfx-acard">
+          <div class="pfx-acard-top">
+            <div class="pfx-acard-ava" style="background:linear-gradient(135deg,#ff3b5c,#ff7a45)">林</div>
+            <div><h3>林见野</h3><small>剧情短片 · 上海</small></div>
+          </div>
+          <p>擅长用长镜头处理人物关系，作品节奏克制，习惯在雨夜与清晨取景。</p>
+          <div class="pfx-acard-nums">
+            <div><b>64</b>作品</div><div><b>18.2万</b>关注</div><div><b>四年</b>合作</div>
+          </div>
+          <button class="pfx-acard-btn" data-pfx-author="林见野|剧情短片导演，签约四年，代表作《城市夜航》系列与《第七个夜晚》。">查看创作者档案</button>
+        </article>
+        <article class="pfx-acard">
+          <div class="pfx-acard-top">
+            <div class="pfx-acard-ava" style="background:linear-gradient(135deg,#2ef2c6,#1e8f9e)">苏</div>
+            <div><h3>苏北镜头</h3><small>纪录访谈 · 南京</small></div>
+          </div>
+          <p>前新闻摄影记者，转向纪录片创作后专注城市夜班人群的长期跟踪拍摄。</p>
+          <div class="pfx-acard-nums">
+            <div><b>41</b>作品</div><div><b>12.6万</b>关注</div><div><b>三年</b>合作</div>
+          </div>
+          <button class="pfx-acard-btn" data-pfx-author="苏北镜头|纪录片创作者，专注城市边缘人群，代表作《夜班清单》《凌晨四点的急诊室》。">查看创作者档案</button>
+        </article>
+        <article class="pfx-acard">
+          <div class="pfx-acard-top">
+            <div class="pfx-acard-ava" style="background:linear-gradient(135deg,#ffd166,#ff9a3c)">沈</div>
+            <div><h3>沈之问</h3><small>深度访谈 · 北京</small></div>
+          </div>
+          <p>访谈风格温和直接，善于把创作者不愿说的部分慢慢问出来，节目以少剪辑著称。</p>
+          <div class="pfx-acard-nums">
+            <div><b>33</b>作品</div><div><b>9.8万</b>关注</div><div><b>两年</b>合作</div>
+          </div>
+          <button class="pfx-acard-btn" data-pfx-author="沈之问|访谈主持人，擅长长对话与行业观察，主导年度企划《她说镜头会记得》。">查看创作者档案</button>
+        </article>
+        <article class="pfx-acard">
+          <div class="pfx-acard-top">
+            <div class="pfx-acard-ava" style="background:linear-gradient(135deg,#c3a6ff,#7b6cf6)">周</div>
+            <div><h3>周屿实验</h3><small>实验影像 · 成都</small></div>
+          </div>
+          <p>把剪辑当作叙事本身，常用重复、倒放与错帧处理记忆主题，手法大胆。</p>
+          <div class="pfx-acard-nums">
+            <div><b>27</b>作品</div><div><b>7.4万</b>关注</div><div><b>两年</b>合作</div>
+          </div>
+          <button class="pfx-acard-btn" data-pfx-author="周屿实验|实验影像作者，2025 年度评审团特别提及，代表作《错帧》《橙室》。">查看创作者档案</button>
+        </article>
+        <article class="pfx-acard">
+          <div class="pfx-acard-top">
+            <div class="pfx-acard-ava" style="background:linear-gradient(135deg,#5ad1ff,#2b7cff)">陈</div>
+            <div><h3>陈默影像</h3><small>剧情短片 · 广州</small></div>
+          </div>
+          <p>关注小空间里的关系张力，作品多用自然光拍摄，色调偏暖而安静。</p>
+          <div class="pfx-acard-nums">
+            <div><b>52</b>作品</div><div><b>14.1万</b>关注</div><div><b>三年</b>合作</div>
+          </div>
+          <button class="pfx-acard-btn" data-pfx-author="陈默影像|剧情短片导演，擅长自然光拍摄与室内调度，代表作《我们不说再见》。">查看创作者档案</button>
+        </article>
+        <article class="pfx-acard">
+          <div class="pfx-acard-top">
+            <div class="pfx-acard-ava" style="background:linear-gradient(135deg,#ff8fa3,#ff3b5c)">制</div>
+            <div><h3>制造间</h3><small>创作幕后 · 杭州</small></div>
+          </div>
+          <p>专注幕后记录，把拍摄现场的混乱与秩序同时保留在画面里，实用性强。</p>
+          <div class="pfx-acard-nums">
+            <div><b>38</b>作品</div><div><b>11.3万</b>关注</div><div><b>三年</b>合作</div>
+          </div>
+          <button class="pfx-acard-btn" data-pfx-author="制造间|幕后制作团队，主打可复用的拍摄方法与剪辑思路，广受新创作者欢迎。">查看创作者档案</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 影像墙 -->
+  <section class="pfx-section" id="pfxWall">
+    <div class="pfx-wrap">
+      <div class="pfx-sec-head">
+        <div>
+          <div class="pfx-sec-kicker">Gallery · 影像墙</div>
+          <h2 class="pfx-sec-title">来自社区的<em>画面切片</em></h2>
+          <p class="pfx-sec-desc">用户上传与官方精选混合展示，每张图都可点击查看所属作品。尺寸不一，构图各异，尽量保留创作者本来的意图。</p>
+        </div>
+      </div>
+      <div class="pfx-wall">
+        <figure class="pfx-wall-item pfx-w-a">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 400'%3E%3Cdefs%3E%3ClinearGradient id='w1' x1='0' y1='0' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23120b10'/%3E%3Cstop offset='1' stop-color='%23ff3b5c' stop-opacity='.8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='400' fill='url(%23w1)'/%3E%3Ccircle cx='600' cy='140' r='90' fill='%23ffd166' opacity='.35'/%3E%3Cpath d='M0 340 Q200 260 400 330 T800 300 V400 H0Z' fill='%230c0810' opacity='.85'/%3E%3C/svg%3E" alt="影像墙作品《夜航·码头》画面：暖红渐变与暗色水面">
+          <figcaption class="pfx-wall-cap">夜航·码头 / 林见野</figcaption>
+        </figure>
+        <figure class="pfx-wall-item pfx-w-b">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 260'%3E%3Crect width='500' height='260' fill='%230e1a1d'/%3E%3Cg stroke='%232ef2c6' stroke-width='2' fill='none' stroke-opacity='.65'%3E%3Cpath d='M0 200 L100 100 L200 200 L300 120 L400 200 L500 140'/%3E%3C/g%3E%3C/svg%3E" alt="影像墙作品《凌晨四点的街》画面：青绿折线与深色背景">
+          <figcaption class="pfx-wall-cap">凌晨四点的街 / 苏北镜头</figcaption>
+        </figure>
+        <figure class="pfx-wall-item pfx-w-c">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 260'%3E%3Crect width='400' height='260' fill='%231d1420'/%3E%3Cg fill='%23ffd166' opacity='.7'%3E%3Ccircle cx='120' cy='130' r='40'/%3E%3Ccircle cx='220' cy='130' r='28' opacity='.55'/%3E%3Ccircle cx='300' cy='130' r='18' opacity='.35'/%3E%3C/g%3E%3C/svg%3E" alt="影像墙作品《橙室·第二镜》画面：金色圆点由大至小排列">
+          <figcaption class="pfx-wall-cap">橙室·第二镜 / 周屿实验</figcaption>
+        </figure>
+        <figure class="pfx-wall-item pfx-w-d">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 260'%3E%3Crect width='300' height='260' fill='%2314131c'/%3E%3Crect x='60' y='60' width='180' height='140' rx='8' fill='none' stroke='%23ffffff' stroke-opacity='.55' stroke-width='2'/%3E%3Ccircle cx='150' cy='130' r='34' fill='%23ff3b5c' opacity='.7'/%3E%3C/svg%3E" alt="影像墙作品《错帧·第七次》画面：白色边框与红色圆心">
+          <figcaption class="pfx-wall-cap">错帧·第七次 / 周屿实验</figcaption>
+        </figure>
+        <figure class="pfx-wall-item pfx-w-e">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 260'%3E%3Crect width='400' height='260' fill='%231a1013'/%3E%3Cg fill='%23ff7a45' opacity='.5'%3E%3Crect x='40' y='160' width='70' height='60'/%3E%3Crect x='140' y='120' width='70' height='100'/%3E%3Crect x='240' y='80' width='70' height='140'/%3E%3C/g%3E%3C/svg%3E" alt="影像墙作品《放映厅最后一排》画面：橙色阶梯柱状与暗底">
+          <figcaption class="pfx-wall-cap">放映厅最后一排 / 陈默影像</figcaption>
+        </figure>
+        <figure class="pfx-wall-item pfx-w-f">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 260'%3E%3Crect width='600' height='260' fill='%2310161a'/%3E%3Cg stroke='%23c3a6ff' stroke-width='1.6' fill='none' stroke-opacity='.6'%3E%3Crect x='60' y='60' width='140' height='140' rx='10'/%3E%3Crect x='230' y='60' width='140' height='140' rx='10'/%3E%3Crect x='400' y='60' width='140' height='140' rx='10'/%3E%3C/g%3E%3C/svg%3E" alt="影像墙作品《一场戏的三次重来》画面：紫色三连取景框">
+          <figcaption class="pfx-wall-cap">一场戏的三次重来 / 制造间</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 用户评价 -->
+  <section class="pfx-section pfx-alt">
+    <div class="pfx-wrap">
+      <div class="pfx-sec-head">
+        <div>
+          <div class="pfx-sec-kicker">Voices · 用户评价</div>
+          <h2 class="pfx-sec-title">他们这样描述<em>先锋成人资源站</em></h2>
+          <p class="pfx-sec-desc">以下评价来自真实注册用户的公开发言，已获得用户授权展示，内容仅代表个人感受。</p>
+        </div>
+      </div>
+      <div class="pfx-voice-grid">
+        <article class="pfx-voice">
+          <p>用了三年的平台，最打动我的是每部作品页面都标注了清晰的分级和制作信息。作为从业者，这种透明其实很难得。</p>
+          <div class="pfx-voice-foot">
+            <span class="pfx-avatar" style="background:#ffd166">程</span>
+            <div><b>程先生</b><small>注册 3 年 · 影视从业</small><div class="pfx-stars">★★★★★</div></div>
+          </div>
+        </article>
+        <article class="pfx-voice">
+          <p>画质稳定，弱网也不卡。下载客户端可以离线整理，我经常出差，飞机上也能看自己收藏的几部。</p>
+          <div class="pfx-voice-foot">
+            <span class="pfx-avatar" style="background:#2ef2c6">梁</span>
+            <div><b>梁女士</b><small>注册 2 年 · 设计师</small><div class="pfx-stars">★★★★★</div></div>
+          </div>
+        </article>
+        <article class="pfx-voice">
+          <p>投稿流程比想象中简单，运营回复也快。第一次上传作品就被推荐到了首页，那种被看见的感觉很难忘。</p>
+          <div class="pfx-voice-foot">
+            <span class="pfx-avatar" style="background:#ff7a45">阿</span>
+            <div><b>阿屿</b><small>注册 1 年 · 独立创作者</small><div class="pfx-stars">★★★★☆</div></div>
+          </div>
+        </article>
+        <article class="pfx-voice">
+          <p>平台对年龄核验做得很认真，我朋友没验证时直接被拦下来了。一开始觉得麻烦，后来反而觉得安心。</p>
+          <div class="pfx-voice-foot">
+            <span class="pfx-avatar" style="background:#c3a6ff">许</span>
+            <div><b>许同学</b><small>注册 1 年 · 学生</small><div class="pfx-stars">★★★★☆</div></div>
+          </div>
+        </article>
+        <article class="pfx-voice">
+          <p>从《城市夜航》第一季追到第三季，能明显看到创作者在进步。这种长期陪伴的感觉，是别的平台给不了的。</p>
+          <div class="pfx-voice-foot">
+            <span class="pfx-avatar" style="background:#5ad1ff">周</span>
+            <div><b>周先生</b><small>注册 4 年 · 老用户</small><div class="pfx-stars">★★★★★</div></div>
+          </div>
+        </article>
+        <article class="pfx-voice">
+          <p>专题企划做得用心，不是简单堆片单，每季都有明确的主题。行业观察那几期我反复看了两遍。</p>
+          <div class="pfx-voice-foot">
+            <span class="pfx-avatar" style="background:#ff8fa3">顾</span>
+            <div><b>顾女士</b><small>注册 2 年 · 媒体编辑</small><div class="pfx-stars">★★★★★</div></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 企业动态 + 榜单 -->
+  <section class="pfx-section" id="pfxNews">
+    <div class="pfx-wrap">
+      <div class="pfx-sec-head">
+        <div>
+          <div class="pfx-sec-kicker">News · 企业动态</div>
+          <h2 class="pfx-sec-title">品牌与平台的<em>最新消息</em></h2>
+          <p class="pfx-sec-desc">官方发布的更新日志、活动通知与行业参与信息，按时间倒序排列。</p>
+        </div>
+      </div>
+      <div class="pfx-two-col">
+        <div>
+          <div class="pfx-log-list">
+            <div class="pfx-log">
+              <time>2026-11-19</time>
+              <div>
+                <h4>「城市夜航」第三季正式上线</h4>
+                <p>六部原创短片同步更新，首周限时 4K 画质播放。</p>
+              </div>
+              <span class="pfx-log-tag pfx-hot">官方发布</span>
+            </div>
+            <div class="pfx-log">
+              <time>2026-11-12</time>
+              <div>
+                <h4>创作者扶持计划冬季批开放报名</h4>
+                <p>共 120 个席位，覆盖剧情、纪录、实验三个方向，1 月截止。</p>
+              </div>
+              <span class="pfx-log-tag pfx-new">报名中</span>
+            </div>
+            <div class="pfx-log">
+              <time>2026-11-05</time>
+              <div>
+                <h4>高清客户端 v4.2 更新</h4>
+                <p>新增批量归档与多设备同步功能，修复部分设备播放异常。</p>
+              </div>
+              <span class="pfx-log-tag">产品更新</span>
+            </div>
+            <div class="pfx-log">
+              <time>2026-10-28</time>
+              <div>
+                <h4>年度影像挑战赛作品征集结束</h4>
+                <p>共收到 486 部投稿，评选结果将于 12 月中旬公布。</p>
+              </div>
+              <span class="pfx-log-tag">活动进展</span>
+            </div>
+            <div class="pfx-log">
+              <time>2026-10-16</time>
+              <div>
+                <h4>平台与两家高校影视专业达成合作</h4>
+                <p>共同开设影像实践工作坊，首期课程面向在校学生免费开放。</p>
+              </div>
+              <span class="pfx-log-tag pfx-new">企业合作</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="pfx-sec-kicker" style="margin-bottom:14px">Rank · 本周热度榜</div>
+          <div class="pfx-rank">
+            <div class="pfx-rank-item"><span class="pfx-rank-no">01</span><h4>城市夜航 第三季 · 第一集</h4><small>热度 9.8万</small></div>
+            <div class="pfx-rank-item"><span class="pfx-rank-no">02</span><h4>我们不说再见</h4><small>热度 8.6万</small></div>
+            <div class="pfx-rank-item"><span class="pfx-rank-no">03</span><h4>她说镜头会记得</h4><small>热度 7.9万</small></div>
+            <div class="pfx-rank-item"><span class="pfx-rank-no">04</span><h4>夜班清单</h4><small>热度 6.4万</small></div>
+            <div class="pfx-rank-item"><span class="pfx-rank-no">05</span><h4>一场戏的诞生</h4><small>热度 5.7万</small></div>
+            <div class="pfx-rank-item"><span class="pfx-rank-no">06</span><h4>错帧</h4><small>热度 4.9万</small></div>
+          </div>
+          <div class="pfx-sec-kicker" style="margin:26px 0 14px">Partner · 合作伙伴</div>
+          <div style="display:flex;flex-wrap:wrap;gap:10px">
+            <span style="font-size:12px;color:var(--pfx-dim);border:1px solid var(--pfx-line);padding:7px 14px;border-radius:9px">光年摄影器材</span>
+            <span style="font-size:12px;color:var(--pfx-dim);border:1px solid var(--pfx-line);padding:7px 14px;border-radius:9px">南岸影业</span>
+            <span style="font-size:12px;color:var(--pfx-dim);border:1px solid var(--pfx-line);padding:7px 14px;border-radius:9px">声野音乐工作室</span>
+            <span style="font-size:12px;color:var(--pfx-dim);border:1px solid var(--pfx-line);padding:7px 14px;border-radius:9px">城市影像档案馆</span>
+            <span style="font-size:12px;color:var(--pfx-dim);border:1px solid var(--pfx-line);padding:7px 14px;border-radius:9px">拾光调色实验室</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ + 联系投稿 -->
+  <section class="pfx-section pfx-alt" id="pfxHelp">
+    <div class="pfx-wrap">
+      <div class="pfx-sec-head">
+        <div>
+          <div class="pfx-sec-kicker">Help · 帮助与联系</div>
+          <h2 class="pfx-sec-title">常见问题与<em>合作入口</em></h2>
+          <p class="pfx-sec-desc">如果你在使用过程中遇到疑问，或希望与品牌建立合作，可以从这里开始。</p>
+        </div>
+      </div>
+      <div class="pfx-two-col">
+        <div class="pfx-faq">
+          <details open>
+            <summary>平台内容有年龄限制吗？如何完成验证？</summary>
+            <p>先锋成人资源站的内容面向成年用户。首次访问时需完成年龄核验，未通过验证的请求会被拦截。核验信息仅用于判断年龄区间，平台不会将其用于其他用途，也不会对外提供。</p>
+          </details>
+          <details>
+            <summary>如何向平台投稿自己的短片？</summary>
+            <p>点击页面上方的“投稿入口”按钮，填写作品名称、时长、分类与简介，并上传成片或样片链接。编辑团队通常在五个工作日内给出初审意见，通过后将进入技术规范复审。</p>
+          </details>
+          <details>
+            <summary>作品上线后，创作者能获得哪些支持？</summary>
+            <p>签约创作者可获得制作补贴、首页推荐位、专属运营对接以及调色与混音资源支持。扶持计划每季度评审一次，入选作品会进入年度精选专题。</p>
+          </details>
+          <details>
+            <summary>平台对画质与片源有什么要求？</summary>
+            <p>上线内容分辨率不低于 1080P，音频响度按平台标准校准，封面与简介需通过编辑复审。平台提供多码率自适应播放，并支持正版授权片源的离线归档。</p>
+          </details>
+          <details>
+            <summary>如何申请删除或更正自己的作品信息？</summary>
+            <p>作品页底部提供反馈入口，提交作品编号与需要修改的内容即可。涉及版权的申请需提供相应证明材料，审核通过后会在三个工作日内处理。</p>
+          </details>
+          <details>
+            <summary>企业合作有哪些形式？</summary>
+            <p>目前开放品牌联名、专题共创、器材合作与场地支持四类合作。可在本页联系入口留下合作方向与联系方式，商务团队会在两个工作日内回复。</p>
+          </details>
+        </div>
+        <div class="pfx-cta">
+          <div>
+            <h2>把你的<em>下一部作品</em><br>交给先锋成人资源站</h2>
+            <p>无论是已经剪完的成片，还是只写了一半的剧本，我们都愿意听你说完。官方网站长期开放投稿与商务合作通道，也欢迎你在社区里留下对平台的建议。</p>
+            <div class="pfx-contact-rows">
+              <span>商务合作<b>brand@pioneer-video.example</b></span>
+              <span>内容投稿<b>submit@pioneer-video.example</b></span>
+              <span>办公地址<b>上海市徐汇区影像园区 B 座 7 层</b></span>
+            </div>
+          </div>
+          <div class="pfx-cta-acts">
+            <button class="pfx-btn pfx-btn-primary" id="pfxUploadCta">立即投稿作品</button>
+            <button class="pfx-btn pfx-btn-ghost" id="pfxShareCta">分享本站给朋友</button>
+            <button class="pfx-btn pfx-btn-ghost" id="pfxReportCta">提交反馈建议</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pfx-footer">
+  <div class="pfx-wrap">
+    <div class="pfx-footer-grid">
+      <div class="pfx-footer-brand">
+        <a href="#pfxTop" class="pfx-logo" aria-label="返回顶部">
+          <span class="pfx-logo-mark">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 4 L20 12 L7 20 Z" fill="#fff"/></svg>
+          </span>
+          <span class="pfx-logo-text">先锋成人资源站<small>PIONEER VIDEO</small></span>
+        </a>
+        <p>先锋成人资源站官方网站，持续运营的成人向原创影像品牌。以正版授权、清晰分级与专业制作，为成年用户与创作者搭建值得信赖的内容生态。</p>
+      </div>
+      <div class="pfx-footer-col">
+        <h4>内容</h4>
+        <a href="#pfxFocus">焦点内容</a>
+        <a href="#pfxVideos">热门影像</a>
+        <a href="#pfxTopics">专题企划</a>
+        <a href="#pfxWall">影像墙</a>
+      </div>
+      <div class="pfx-footer-col">
+        <h4>品牌</h4>
+        <a href="#pfxAbout">品牌故事</a>
+        <a href="#pfxCreators">创作者矩阵</a>
+        <a href="#pfxNews">企业动态</a>
+        <a href="#pfxHelp">帮助中心</a>
+      </div>
+      <div class="pfx-footer-col">
+        <h4>合作</h4>
+        <a href="#pfxHelp">商务合作</a>
+        <a href="#pfxHelp">作品投稿</a>
+        <a href="#pfxHelp">反馈建议</a>
+        <a href="#pfxHelp">加入社区</a>
+      </div>
+    </div>
+    <div class="pfx-footer-bottom">
+      <span>© 2026 先锋成人资源站 版权所有 · 企业官方网站</span>
+      <span>沪ICP备 2026XXXX号-3 · 沪公网安备 310104XXXXXXX号</span>
+      <span><i class="pfx-dot"></i>平台持续运营中 · 内容面向成年用户</span>
+    </div>
+  </div>
+</footer>
+
+<!-- 弹窗：分享 -->
+<div class="pfx-modal-mask" id="pfxShareMask" role="dialog" aria-modal="true" aria-label="分享本站">
+  <div class="pfx-modal">
+    <h3>分享先锋成人资源站</h3>
+    <p>选择你常用的平台，把品牌官方网站介绍给朋友。</p>
+    <div class="pfx-share-row">
+      <button class="pfx-share-btn" data-pfx-share-to="微信"><i style="background:rgba(76,217,100,.16);color:#4cd964">微</i>微信</button>
+      <button class="pfx-share-btn" data-pfx-share-to="微博"><i style="background:rgba(255,122,69,.16);color:#ff7a45">博</i>微博</button>
+      <button class="pfx-share-btn" data-pfx-share-to="QQ"><i style="background:rgba(90,209,255,.16);color:#5ad1ff">Q</i>QQ</button>
+      <button class="pfx-share-btn" data-pfx-share-to="复制链接"><i style="background:rgba(255,209,102,.16);color:#ffd166">链</i>复制链接</button>
+    </div>
+    <div class="pfx-modal-acts">
+      <button class="pfx-btn pfx-btn-ghost" data-pfx-close>关闭</button>
+    </div>
+  </div>
+</div>
+
+<!-- 弹窗：投稿 -->
+<div class="pfx-modal-mask" id="pfxUploadMask" role="dialog" aria-modal="true" aria-label="投稿作品">
+  <div class="pfx-modal">
+    <h3>作品投稿</h3>
+    <p>填写基本信息，编辑团队将在五个工作日内与你联系。</p>
+    <form id="pfxUploadForm">
+      <div class="pfx-modal-field">
+        <label for="pfxUpTitle">作品名称</label>
+        <input type="text" id="pfxUpTitle" placeholder="例如：城市夜航 第四季 · 第一集" required>
+      </div>
+      <div class="pfx-modal-field">
+        <label for="pfxUpCat">作品分类</label>
+        <select id="pfxUpCat">
+          <option>剧情短片</option>
+          <option>纪录访谈</option>
+          <option>实验影像</option>
+          <option>创作幕后</option>
+        </select>
+      </div>
+      <div class="pfx-modal-field">
+        <label for="pfxUpContact">联系方式</label>
+        <input type="text" id="pfxUpContact" placeholder="邮箱或手机号" required>
+      </div>
+      <div class="pfx-modal-acts">
+        <button type="submit" class="pfx-btn pfx-btn-primary">提交投稿</button>
+        <button type="button" class="pfx-btn pfx-btn-ghost" data-pfx-close>取消</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- 弹窗：反馈 -->
+<div class="pfx-modal-mask" id="pfxReportMask" role="dialog" aria-modal="true" aria-label="提交反馈">
+  <div class="pfx-modal">
+    <h3>反馈与建议</h3>
+    <p>我们重视每一条来自社区的反馈，运营团队会逐条阅读。</p>
+    <form id="pfxReportForm">
+      <div class="pfx-modal-field">
+        <label for="pfxRepType">反馈类型</label>
+        <select id="pfxRepType">
+          <option>内容问题</option>
+          <option>播放体验</option>
+          <option>账号与验证</option>
+          <option>功能建议</option>
+          <option>其他</option>
+        </select>
+      </div>
+      <div class="pfx-modal-field">
+        <label for="pfxRepBody">问题描述</label>
+        <textarea id="pfxRepBody" placeholder="请尽量描述清楚出现问题的页面与时间" required></textarea>
+      </div>
+      <div class="pfx-modal-acts">
+        <button type="submit" class="pfx-btn pfx-btn-primary">提交反馈</button>
+        <button type="button" class="pfx-btn pfx-btn-ghost" data-pfx-close>取消</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- 弹窗：创作者档案 -->
+<div class="pfx-modal-mask" id="pfxAuthorMask" role="dialog" aria-modal="true" aria-label="创作者档案">
+  <div class="pfx-modal">
+    <h3 id="pfxAuthorName">创作者档案</h3>
+    <p id="pfxAuthorDesc">档案信息</p>
+    <div class="pfx-modal-acts">
+      <button class="pfx-btn pfx-btn-primary" id="pfxAuthorFollow">关注该创作者</button>
+      <button class="pfx-btn pfx-btn-ghost" data-pfx-close>关闭</button>
+    </div>
+  </div>
+</div>
+
+<div class="pfx-toast" id="pfxToast" role="status" aria-live="polite"></div>
+<button class="pfx-top-btn" id="pfxTopBtn" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 19 V5 M5 12 L12 5 L19 12"/></svg>
+</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- Toast ---------- */
+  var toastEl = document.getElementById('pfxToast');
+  var toastTimer = null;
+  function showToast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('pfx-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){
+      toastEl.classList.remove('pfx-show');
+    }, 2200);
+  }
+
+  /* ---------- 移动端导航 ---------- */
+  var burger = document.getElementById('pfxBurger');
+  var nav = document.getElementById('pfxNav');
+  burger.addEventListener('click', function(){
+    nav.classList.toggle('pfx-open');
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){
+      nav.classList.remove('pfx-open');
+      Array.prototype.forEach.call(nav.querySelectorAll('a'), function(a){ a.classList.remove('pfx-active'); });
+      e.target.classList.add('pfx-active');
+    }
+  });
+
+  /* ---------- 搜索 ---------- */
+  var searchInput = document.getElementById('pfxSearchInput');
+  var searchBtn = document.getElementById('pfxSearchBtn');
+  var searchTip = document.getElementById('pfxSearchTip');
+  var searchMap = [
+    '城市夜航','第七个夜晚','夜班清单','错帧','她说镜头会记得','一场戏的诞生','我们不说再见','橙室'
+  ];
+  var searchTimer = null;
+
+  function runSearch(){
+    var kw = searchInput.value.trim();
+    if(!kw){
+      searchTip.innerHTML = '试试搜索 <b>城市夜航</b>、<b>访谈</b> 或 <b>周屿实验</b>';
+      searchTip.classList.add('pfx-show');
+      return;
+    }
+    var hits = searchMap.filter(function(x){ return x.indexOf(kw) > -1; });
+    if(hits.length){
+      searchTip.innerHTML = '为你找到 <b>' + hits.length + '</b> 条相关内容：' + hits.slice(0,4).join(' · ');
+      searchTip.classList.add('pfx-show');
+      var target = document.getElementById('pfxVideos');
+      if(target){ target.scrollIntoView({behavior:'smooth'}); }
+      showToast('已为你定位到影像频道');
+    }else{
+      searchTip.innerHTML = '暂未找到「<b>' + kw.replace(/[<>&]/g,'') + '</b>」相关内容，换个关键词试试';
+      searchTip.classList.add('pfx-show');
+      showToast('没有匹配结果，试试其他关键词');
+    }
+  }
+  searchBtn.addEventListener('click', runSearch);
+  searchInput.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){ runSearch(); }
+  });
+  searchInput.addEventListener('input', function(){
+    clearTimeout(searchTimer);
+    var v = searchInput.value.trim();
+    if(!v){ searchTip.classList.remove('pfx-show'); return; }
+    searchTimer = setTimeout(function(){
+      var hits = searchMap.filter(function(x){ return x.indexOf(v) > -1; });
+      if(hits.length){
+        searchTip.innerHTML = '相关推荐：' + hits.slice(0,3).join(' · ');
+        searchTip.classList.add('pfx-show');
+      }else{
+        searchTip.classList.remove('pfx-show');
+      }
+    }, 260);
+  });
+  document.addEventListener('click', function(e){
+    if(!e.target.closest('.pfx-search')){ searchTip.classList.remove('pfx-show'); }
+  });
+
+  /* ---------- 点赞 / 收藏 ---------- */
+  document.addEventListener('click', function(e){
+    var likeBtn = e.target.closest('[data-pfx-like]');
+    if(likeBtn){
+      var numEl = likeBtn.querySelector('span');
+      var n = parseFloat((numEl.textContent || '0').replace(/[^\d.]/g,'')) || 0;
+      var liked = likeBtn.classList.toggle('pfx-liked');
+      if(liked){
+        n = n + (n < 10 ? 1 : 100);
+        numEl.textContent = n >= 1000 ? (n/1000).toFixed(1) + 'k' : String(n);
+        showToast('已点赞，感谢你的支持');
+      }else{
+        n = Math.max(0, n - (n < 10 ? 1 : 100));
+        numEl.textContent = n >= 1000 ? (n/1000).toFixed(1) + 'k' : String(n);
+        showToast('已取消点赞');
+      }
+      return;
+    }
+    var saveBtn = e.target.closest('[data-pfx-save]');
+    if(saveBtn){
+      var saved = saveBtn.classList.toggle('pfx-saved');
+      showToast(saved ? '已加入收藏夹' : '已取消收藏');
+      return;
+    }
+    var shareBtn = e.target.closest('[data-pfx-share]');
+    if(shareBtn){
+      openModal(shareMask);
+      return;
+    }
+  });
+
+  /* ---------- 筛选 ---------- */
+  var filterBar = document.getElementById('pfxFilter');
+  var videoGrid = document.getElementById('pfxVideoGrid');
+  filterBar.addEventListener('click', function(e){
+    var btn = e.target.closest('button[data-pfx-filter]');
+    if(!btn){ return; }
+    Array.prototype.forEach.call(filterBar.querySelectorAll('button'), function(b){ b.classList.remove('pfx-active'); });
+    btn.classList.add('pfx-active');
+    var cat = btn.getAttribute('data-pfx-filter');
+    Array.prototype.forEach.call(videoGrid.querySelectorAll('.pfx-vcard'), function(card){
+      var c = card.getAttribute('data-pfx-cat');
+      if(cat === 'all' || c === cat){
+        card.classList.remove('pfx-hidden');
+      }else{
+        card.classList.add('pfx-hidden');
+      }
+    });
+    showToast('已筛选：' + btn.textContent);
+  });
+
+  /* ---------- 弹窗通用 ---------- */
+  var shareMask = document.getElementById('pfxShareMask');
+  var uploadMask = document.getElementById('pfxUploadMask');
+  var reportMask = document.getElementById('pfxReportMask');
+  var authorMask = document.getElementById('pfxAuthorMask');
+
+  function openModal(mask){
+    mask.classList.add('pfx-show');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeAllModals(){
+    [shareMask, uploadMask, reportMask, authorMask].forEach(function(m){
+      m.classList.remove('pfx-show');
+    });
+    document.body.style.overflow = '';
+  }
+  document.addEventListener('click', function(e){
+    if(e.target.closest('[data-pfx-close]')){ closeAllModals(); return; }
+    if(e.target.classList && e.target.classList.contains('pfx-modal-mask')){ closeAllModals(); return; }
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){ closeAllModals(); }
+  });
+
+  /* ---------- 分享 ---------- */
+  document.getElementById('pfxShareCta').addEventListener('click', function(){ openModal(shareMask); });
+  document.querySelectorAll('[data-pfx-share-to]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var to = btn.getAttribute('data-pfx-share-to');
+      if(to === '复制链接'){
+        var link = 'https://www.pioneer-video.example/';
+        if(navigator.clipboard && navigator.clipboard.writeText){
+          navigator.clipboard.writeText(link).then(function(){
+            showToast('链接已复制到剪贴板');
+          }).catch(function(){
+            showToast('复制失败，请手动复制地址');
+          });
+        }else{
+          showToast('当前环境不支持自动复制');
+        }
+      }else{
+        showToast('已生成分享卡片，请前往' + to + '粘贴');
+      }
+      closeAllModals();
+    });
+  });
+
+  /* ---------- 投稿 ---------- */
+  function openUpload(){ openModal(uploadMask); }
+  document.getElementById('pfxUploadTop').addEventListener('click', openUpload);
+  document.getElementById('pfxUploadCta').addEventListener('click', openUpload);
+  document.getElementById('pfxUploadForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    var t = document.getElementById('pfxUpTitle').value.trim();
+    var c = document.getElementById('pfxUpContact').value.trim();
+    if(!t || !c){ showToast('请填写完整信息'); return; }
+    closeAllModals();
+    this.reset();
+    showToast('投稿已提交，编辑团队将在五个工作日内联系你');
+  });
+
+  /* ---------- 反馈 ---------- */
+  document.getElementById('pfxReportCta').addEventListener('click', function(){ openModal(reportMask); });
+  document.getElementById('pfxReportForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    var body = document.getElementById('pfxRepBody').value.trim();
+    if(!body){ showToast('请填写问题描述'); return; }
+    closeAllModals();
+    this.reset();
+    showToast('反馈已收到，感谢你帮助平台改进');
+  });
+
+  /* ---------- 创作者档案 ---------- */
+  var authorNameEl = document.getElementById('pfxAuthorName');
+  var authorDescEl = document.getElementById('pfxAuthorDesc');
+  var authorFollowBtn = document.getElementById('pfxAuthorFollow');
+  var currentAuthor = '';
+  document.getElementById('pfxAuthorGrid').addEventListener('click', function(e){
+    var btn = e.target.closest('[data-pfx-author]');
+    if(!btn){ return; }
+    var raw = btn.getAttribute('data-pfx-author');
+    var parts = raw.split('|');
+    currentAuthor = parts[0] || '创作者';
+    authorNameEl.textContent = parts[0] || '创作者档案';
+    authorDescEl.textContent = parts[1] || '该创作者暂未补充更多介绍。';
+    authorFollowBtn.textContent = '关注该创作者';
+    authorFollowBtn.dataset.followed = '0';
+    openModal(authorMask);
+  });
+  authorFollowBtn.addEventListener('click', function(){
+    var followed = authorFollowBtn.dataset.followed === '1';
+    if(followed){
+      authorFollowBtn.dataset.followed = '0';
+      authorFollowBtn.textContent = '关注该创作者';
+      showToast('已取消关注 ' + currentAuthor);
+    }else{
+      authorFollowBtn.dataset.followed = '1';
+      authorFollowBtn.textContent = '已关注 ✓';
+      showToast('已关注 ' + currentAuthor);
+    }
+  });
+
+  /* ---------- 回到顶部 ---------- */
+  var topBtn = document.getElementById('pfxTopBtn');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 520){ topBtn.classList.add('pfx-show'); }
+    else{ topBtn.classList.remove('pfx-show'); }
+  }, {passive:true});
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* ---------- 导航锚点滚动（预留吸顶高度） ---------- */
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('a[href^="#"]');
+    if(!a){ return; }
+    var id = a.getAttribute('href');
+    if(id === '#' || id.length < 2){ return; }
+    var target = document.querySelector(id);
+    if(!target){ return; }
+    e.preventDefault();
+    var headH = document.querySelector('.pfx-sticky-wrap').offsetHeight;
+    var top = target.getBoundingClientRect().top + window.scrollY - headH - 12;
+    window.scrollTo({top: Math.max(0, top), behavior:'smooth'});
+  });
+
+  /* ---------- 数字滚动 ---------- */
+  var statEls = document.querySelectorAll('.pfx-stat b');
+  var statDone = false;
+  function animateStats(){
+    if(statDone){ return; }
+    var trigger = window.scrollY + window.innerHeight > document.querySelector('.pfx-hero-stats').offsetTop + 200;
+    if(!trigger){ return; }
+    statDone = true;
+    statEls.forEach(function(el){
+      var raw = el.textContent;
+      var num = parseFloat(raw.replace(/[^\d.]/g,''));
+      var suffix = raw.replace(/[\d.,]/g,'');
+      if(isNaN(num)){ return; }
+      var start = performance.now();
+      var dur = 1200;
+      function step(now){
+        var p = Math.min(1, (now - start) / dur);
+        var eased = 1 - Math.pow(1 - p, 3);
+        var cur = Math.round(num * eased * 10) / 10;
+        el.textContent = (Number.isInteger(num) ? Math.round(cur) : cur) + suffix;
+        if(p < 1){ requestAnimationFrame(step); }
+        else{ el.textContent = raw; }
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  window.addEventListener('scroll', animateStats, {passive:true});
+  window.addEventListener('load', animateStats);
+
+})();
+</script>
+</body>
+  </html>
